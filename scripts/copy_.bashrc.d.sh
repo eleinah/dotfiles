@@ -6,5 +6,5 @@ DEST_PATH="~/"
 HOSTS=(media bunker util)
 
 for HOST in "${HOSTS[@]}"; do
-    scp -r "$SOURCE_PATH" "$HOST:$DEST_PATH"
+    rsync -avc "$SOURCE_PATH" "$HOST:$DEST_PATH"
 done

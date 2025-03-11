@@ -7,4 +7,5 @@ HOSTS=(media bunker util)
 
 for HOST in "${HOSTS[@]}"; do
     scp -r "$SOURCE_PATH" "$HOST:$DEST_PATH"
+    ssh "$HOST" "source ~/.bashrc"
 done

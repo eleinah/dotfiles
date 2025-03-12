@@ -24,6 +24,7 @@ EXCLUDES=(
 	"/proc/**"
 	"/sys/**"
 	"/tmp/**"
+	"/run/**"
 	"/mnt/**"
 	"/media/**"
 	"/lost+found"

@@ -5,3 +5,6 @@ au FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 " Set .bashrc (Custom for ~/.bashrc.d/) to be read as Bash
 au BufNewFile,BufRead *.bashrc setf sh
+
+" Map F9 to execute current Python file
+nnoremap <F9> :w<CR>:exec '!python' shellescape(@%, 1)<CR>

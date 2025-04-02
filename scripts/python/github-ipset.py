@@ -5,7 +5,7 @@ import os
 headers = {'Authorization': 'TOKEN'}
 response = requests.get('https://api.github.com/meta')
 data = response.json()
-cats = ['hooks', 'web', 'api', 'git', 'github_enterprise_importer', 'packages', 'pages', 'importer', 'actions', 'actions_macos', 'codespaces', 'dependabot', 'copilot']
+cats = ['hooks', 'web', 'api', 'git', 'github_enterprise_importer', 'packages', 'pages', 'importer', 'actions', 'actions_macos', 'codespaces', 'dependabot', 'copilot'] # !! simplify this eventually instead of needing to list out each one !!
 
 ips = []
 
@@ -17,4 +17,4 @@ ips = list(set(ips))
 
 for ip in ips:
     cmd = f'pvesh create /cluster/firewall/ipset/github -cidr {ip}'
-    os.system(cmd)
+    os.system(cmd) # !! opt for subprocesses instead !!

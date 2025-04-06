@@ -1,4 +1,5 @@
 # This script assumes the keys you're wanting to copy are in ~/.ssh/
+# Usage: python3 ssh-key-copy.py <remote_host> <key1> [<key2> ...]
 import sys
 import subprocess
 import os

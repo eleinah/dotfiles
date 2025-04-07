@@ -1,2 +1,2 @@
-alias 'vpn up' 'sudo wg-quick up wg0'
-alias 'vpn down' 'sudo wg-quick down wg0'
+alias vpnup 'sudo wg-quick up wg0'
+alias vpndown 'sudo wg-quick down wg0'

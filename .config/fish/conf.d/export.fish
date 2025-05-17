@@ -1,4 +1,4 @@
-set gh /home/ellie/workspace/github.com/0x311i3
-set brain /home/ellie/workspace/github.com/0x311i3/obsidian/brain
+set gh /home/ellie/workspace/github.com/self-lly
+set brain /home/ellie/workspace/github.com/self-lly/obsidian/brain
 set PAGER bat
 set ws /home/ellie/workspace

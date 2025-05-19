@@ -1,0 +1,20 @@
+# Extensions I Use
+- HTML
+- Catppuccin
+- Dockerfile
+- Git Firefly
+- SQL
+- Lua
+- Catppuccin Icons
+- Docker Compose
+- CSV
+- Python LSP <u>*(requires python-lsp-server to be install)*</u>
+- Rainbow CSV
+- env
+- Markdown Oxide
+- golangci-lint
+- ini
+- Fish
+- Discord Presence
+- Python requirements and constraints
+- Go Sum Highlighting

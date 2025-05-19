@@ -8,7 +8,7 @@
 - Catppuccin Icons
 - Docker Compose
 - CSV
-- Python LSP <u>*(requires python-lsp-server to be installed)*</u>
+- Python LSP *(requires __python-lsp-server__ to be installed)*
 - Rainbow CSV
 - env
 - Markdown Oxide

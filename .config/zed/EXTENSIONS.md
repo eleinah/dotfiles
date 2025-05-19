@@ -18,3 +18,4 @@
 - Discord Presence
 - Python requirements and constraints
 - Go Sum Highlighting
+- Codebook Spell Checker

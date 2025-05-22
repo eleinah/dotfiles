@@ -8,7 +8,7 @@
 - Catppuccin Icons
 - Docker Compose
 - CSV
-- Python LSP *(requires __python-lsp-server__ to be installed)*
+- Python LSP *(requires **python-lsp-server** to be installed)*
 - Rainbow CSV
 - env
 - Markdown Oxide
@@ -19,3 +19,9 @@
 - Python requirements and constraints
 - Go Sum Highlighting
 - Codebook Spell Checker
+
+
+# Visual Debugging
+To get visual debugging working in my environments, a few things are needed:
+- *debugpy* for Python
+- *dlv* for Go

@@ -13,3 +13,5 @@ set $menu "rofi -modi run,drun,window -show drun"
 
 
 set $runmenu "rofi -modi run,drun,window -show run"
+
+set $filemgr "thunar"

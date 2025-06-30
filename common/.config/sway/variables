@@ -10,3 +10,6 @@ set $right l
 set $term kitty
 # Your preferred application launcher
 set $menu "rofi -modi run,drun,window -show drun"
+
+
+set $runmenu "rofi -modi run,drun,window -show run"

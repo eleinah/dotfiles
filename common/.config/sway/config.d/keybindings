@@ -7,6 +7,9 @@ bindsym $mod+Shift+q kill
 # Start your launcher
 bindsym $mod+d exec $menu
 
+# Start Thunar
+bindsym $mod+Shift+f exec $filemgr
+
 # Start a run launcher
 bindsym $mod+Shift+d exec $runmenu
 

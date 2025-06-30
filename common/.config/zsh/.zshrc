@@ -75,3 +75,6 @@ echo -e "${NEWLINE}\033[48;2;60;56;54;38;2;235;219;178m $0 \033[0m\033[48;2;80;7
 # syntax highlighting
 # requires zsh-syntax-highlighting package
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Initialize Starship
+eval "$(starship init zsh)"

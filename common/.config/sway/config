@@ -230,3 +230,4 @@ bar {
 }
 
 include /etc/sway/config.d/*
+include /home/ellie/.config/sway/config.d/*

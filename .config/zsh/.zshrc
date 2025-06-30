@@ -78,5 +78,13 @@ echo -e "${NEWLINE}\033[48;2;60;56;54;38;2;235;219;178m $0 \033[0m\033[48;2;80;7
 # requires zsh-syntax-highlighting package
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# autocompletions
+# requires zsh-autocomplete
+source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.zsh
+
+# more completions
+# requires zsh-completions
+source /usr/share/zsh/plugins/zsh-completions/zsh-completions.zsh
+
 # Initialize Starship
 eval "$(starship init zsh)"

@@ -1,4 +1,4 @@
-palette = "catppuccin_mocha"
+palette = "gruvbox_dark"
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"
@@ -27,3 +27,32 @@ surface0 = "#313244"
 base = "#1e1e2e"
 mantle = "#181825"
 crust = "#11111b"
+
+[palettes.gruvbox_dark]
+rosewater = ""        # Not in Gruvbox; omit or set to empty
+flamingo = ""         # Not in Gruvbox; omit or set to empty
+pink = ""             # Not in Gruvbox; omit or set to empty
+mauve = ""            # Not in Gruvbox; omit or set to empty
+red = "#cc241d"
+maroon = "#cc241d"    # Gruvbox uses same red for maroon-like accent
+peach = "#d65d0e"
+yellow = "#d79921"
+green = "#98971a"
+teal = "#689d6a"
+sky = "#458588"       # Gruvbox "blue" is similar to "sky" or "sapphire"
+sapphire = "#458588"  # Using same as sky for Gruvbox
+blue = "#458588"      # Gruvbox "blue" is used for all blue-like shades
+lavender = "#b16286"  # Gruvbox "purple" is closest to "lavender"
+text = "#ebdbb2"
+subtext1 = "#d5c4a1"  # Subtext1 as lighter text variant
+subtext0 = "#bdae93"  # Subtext0 as even lighter variant
+overlay2 = "#a89984"  # Overlay2 as light gray
+overlay1 = "#928374"  # Overlay1 as medium gray
+overlay0 = "#7c6f64"  # Overlay0 as darker gray
+surface2 = "#665c54"  # Surface2 as dark gray
+surface1 = "#504945"  # Surface1 as even darker gray
+surface0 = "#3c3836"  # Surface0 as darkest gray
+base = "#282828"
+mantle = "#1d2021"
+crust = "#141617"
+

@@ -1,9 +1,6 @@
 # main zsh settings. env in ~/.zprofile
 # read second
 
-# Disable bell sound when pressing backspace on an empty line
-bind 'set bell-style none'
-
 # source global shell alias & variables files
 [ -f "$XDG_CONFIG_HOME/shell/alias" ] && source "$XDG_CONFIG_HOME/shell/alias"
 [ -f "$XDG_CONFIG_HOME/shell/vars" ] && source "$XDG_CONFIG_HOME/shell/vars"
@@ -80,11 +77,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 # autocompletions
 # requires zsh-autocomplete
-source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.zsh
-
-# more completions
-# requires zsh-completions
-source /usr/share/zsh/plugins/zsh-completions/zsh-completions.zsh
+source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 # Initialize Starship
 eval "$(starship init zsh)"

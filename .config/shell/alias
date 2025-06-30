@@ -13,7 +13,6 @@ mv="mv -i" \
 rm="rm -Iv" \
 df="df -h" \
 du="du -h -d 1" \
-p="ps aux | grep $1" \
 wthr="curl wttr.in" \
 zed="zeditor" \
 ff="fastfetch" \

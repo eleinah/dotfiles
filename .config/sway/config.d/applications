@@ -1,0 +1,28 @@
+### Application specific configurations
+
+    # Titlebars get resized when text with a different height gets picked up.
+    # This includes emoji and Hangul. This neat hack makes all titlebars higher.
+    # See https://github.com/swaywm/sway/issues/4992
+    # for_window [title=".*"] title_format %title゜
+
+    ## Add floating windows and inhibit idle
+    # Get app_id or class with
+    # swaymsg -t get_tree | grep
+    for_window [app_id="mpv"] floating enable, inhibit_idle visible
+    for_window [class="Steam"] floating enable
+    for_window [class="steam_app*"] inhibit_idle visible 
+
+    ## Add opacity to unmanaged applications
+    for_window [app_id="kitty"] opacity 0.95
+    for_window [class="Spotify"] opacity 0.85
+
+    ##Tag xwayland windows
+    for_window [shell="xwayland"] title_format "<span>[X] %title</span>"
+
+    ## Window fixes
+    # Fix for floating window when screensharing
+    for_window [title=".*is sharing your screen."] border none
+
+    ## Assign Workspaces
+    # assign [class="jetbrains-idea"] → workspace 2
+    # assign [class="jetbrains-datagrip"] → workspace 2

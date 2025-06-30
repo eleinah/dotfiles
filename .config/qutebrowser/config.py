@@ -104,8 +104,9 @@ config.bind('pP', 'open -- {primary}')
 config.bind('pp', 'open -- {clipboard}')
 config.bind('pt', 'open -t -- {clipboard}')
 # config.bind('qm', 'macro-record')
-config.bind('<ctrl-y>', 'spawn mpv {url}')
-config.bind('<ctrl-shift-y>', 'hint links spawn mpv {hint-url}')
+config.bind('<ctrl-y>', 'spawn mpv {url}') # requires: mpv, youtube-dl
+config.bind('<ctrl-shift-y>', 'hint links spawn mpv {hint-url}') # requires: mpv, youtube-dl
+config.bind('<ctrl-shift-l>', 'spawn --userscript qute-bitwarden') # requires: bitwarden-cli, python-tldextract & python-pyperclip
 config.bind('tT', 'config-cycle tabs.position top left')
 config.bind('gJ', 'tab-move +')
 config.bind('gK', 'tab-move -')

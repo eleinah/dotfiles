@@ -104,10 +104,15 @@ config.bind('pP', 'open -- {primary}')
 config.bind('pp', 'open -- {clipboard}')
 config.bind('pt', 'open -t -- {clipboard}')
 # config.bind('qm', 'macro-record')
+config.bind('<ctrl-y>', 'spawn mpv {url}')
+config.bind('<ctrl-shift-y>', 'hint links spawn mpv {hint-url}')
 config.bind('tT', 'config-cycle tabs.position top left')
 config.bind('gJ', 'tab-move +')
 config.bind('gK', 'tab-move -')
 config.bind('gm', 'tab-move')
+
+# disable video autoplay
+c.content.autoplay = False
 
 # dark mode setup
 c.colors.webpage.darkmode.enabled = True

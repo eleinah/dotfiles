@@ -1,6 +1,8 @@
 # main zsh settings. env in ~/.zprofile
 # read second
 
+# Disable bell sound when pressing backspace on an empty line
+bind 'set bell-style none'
 
 # source global shell alias & variables files
 [ -f "$XDG_CONFIG_HOME/shell/alias" ] && source "$XDG_CONFIG_HOME/shell/alias"

@@ -9,7 +9,7 @@
 
     "modules-left": ["clock#time", "clock#date", "sway/language", "custom/arrow1", "custom/scratchpad-indicator", "custom/pacman", "custom/arrow2", "idle_inhibitor", "custom/arrow3",  "custom/playerctl"],
     "modules-center": ["custom/arrow4", "sway/workspaces", "custom/arrow5"],
-    "modules-right": ["custom/arrow6", "custom/cpugovernor", "custom/arrow7",  "temperature", "cpu", "custom/gpu", "custom/arrow8", "network", "custom/kdeconnect", "bluetooth", "pulseaudio", "tray"],
+    "modules-right": ["custom/arrow6", "custom/cpugovernor", "custom/arrow7",  "temperature", "cpu", "custom/gpu", "custom/arrow8", "network", "bluetooth", "pulseaudio", "tray"],
     
     // Modules configuration
     "sway/workspaces": {

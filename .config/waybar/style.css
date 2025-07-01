@@ -1,0 +1,142 @@
+/* Gruvbox Dark Theme for Waybar */
+
+/* Global bar styling */
+* {
+  font-family: "DepartureMono Nerd Font", "JetBrainsMono Nerd Font", "monospace";
+  font-size: 13px;
+  min-height: 0;
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
+  color: #ebdbb2; /* Gruvbox fg */
+}
+
+window#waybar {
+  background: rgba(40, 40, 40, 0.97); /* Gruvbox bg0 hard */
+  border-bottom: 1px solid #504945;    /* Gruvbox bg2 */
+}
+
+/* Module blocks */
+#workspaces, #sway-workspaces {
+  margin: 0 6px;
+}
+
+#workspaces button, #sway-workspaces button {
+  background: transparent;
+  color: #ebdbb2;
+  border: none;
+  padding: 0 8px;
+  margin: 0 2px;
+  transition: background 0.2s, color 0.2s;
+}
+
+#workspaces button.active, #sway-workspaces button.active {
+  background: #504945; /* Gruvbox bg2 */
+  color: #fabd2f;      /* Gruvbox yellow */
+  border-radius: 4px;
+}
+
+#workspaces button.urgent, #sway-workspaces button.urgent {
+  background: #cc241d; /* Gruvbox red */
+  color: #fbf1c7;
+  border-radius: 4px;
+}
+
+#custom-weather {
+  padding: 0 10px;
+  color: #83a598; /* Gruvbox blue */
+}
+
+#cava {
+  padding: 0 8px;
+  color: #fabd2f; /* Gruvbox yellow */
+}
+
+#pulseaudio, #pulseaudio#microphone, #pulseaudio.microphone {
+  padding: 0 10px;
+  color: #b8bb26; /* Gruvbox green */
+}
+
+#cpu {
+  padding: 0 10px;
+  color: #fe8019; /* Gruvbox orange */
+}
+
+#memory {
+  padding: 0 10px;
+  color: #d3869b; /* Gruvbox purple */
+}
+
+#temperature {
+  padding: 0 10px;
+  color: #fb4934; /* Gruvbox bright red */
+}
+
+#keyboard-state {
+  padding: 0 10px;
+  color: #fabd2f; /* Gruvbox yellow */
+}
+
+#sway-language {
+  padding: 0 10px;
+  color: #b8bb26; /* Gruvbox green */
+}
+
+#clock {
+  padding: 0 10px;
+  color: #d79921; /* Gruvbox yellow (dark) */
+}
+
+#network {
+  padding: 0 10px;
+  color: #8ec07c; /* Gruvbox aqua */
+}
+
+#tray {
+  padding: 0 8px;
+}
+
+#custom-power {
+  padding: 0 10px;
+  color: #fb4934; /* Gruvbox bright red */
+}
+
+#idle_inhibitor {
+  padding: 0 10px;
+  color: #d3869b; /* Gruvbox purple */
+}
+
+/* Optional: hover/focus/active states for interactivity */
+#workspaces button:hover, #sway-workspaces button:hover {
+  background: #3c3836; /* Gruvbox bg1 */
+  color: #fabd2f;
+}
+
+#workspaces button.focused, #sway-workspaces button.focused {
+  background: #b16286; /* Gruvbox purple */
+  color: #fbf1c7;
+}
+
+/* Tooltip styling */
+tooltip {
+  background: #282828; /* Gruvbox bg0 hard */
+  color: #ebdbb2;
+  border-radius: 4px;
+  border: 1px solid #504945;
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+/* Minimal separators for clarity */
+#cpu, #memory, #temperature, #network, #pulseaudio, #pulseaudio#microphone, #clock, #keyboard-state, #sway-language, #custom-weather, #custom-power, #idle_inhibitor {
+  border-left: 1px solid #504945;
+}
+
+#cpu { border-left: none; } /* Remove left border from first module in the group */
+
+/* Hide module borders if they're first in their segment (optional, tweak as needed) */
+.modules-left > widget:first-child > * ,
+.modules-center > widget:first-child > * ,
+.modules-right > widget:first-child > * {
+  border-left: none;
+}

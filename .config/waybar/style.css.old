@@ -1,0 +1,100 @@
+/* Global bar styling */
+* {
+    font-family: "DepartureMono Nerd Font", "JetBrainsMono Nerd Font", "monospace";
+    font-size: 13px;
+    min-height: 0;
+    box-shadow: none;
+    border-radius: 0;
+    border: none;
+    color: #e0e0e0;
+}
+
+window#waybar {
+    background: rgba(25, 28, 35, 0.97);
+    border-bottom: 1px solid #282c34;
+}
+
+/* Module blocks */
+#workspaces,
+#sway-workspaces {
+    margin: 0 6px;
+}
+
+#custom-weather {
+    padding: 0 10px;
+    color: #6cc3d5;
+}
+
+#custom-updates {
+    padding: 0 10px;
+    color: #c3e88d;
+}
+
+#cava {
+    padding: 0 8px;
+    color: #d7ba7d;
+}
+
+#custom-playerctl {
+    padding: 0 10px;
+    color: #bb80b3;
+}
+
+#pulseaudio,
+#pulseaudio.microphone,
+#pulseaudio#microphone {
+    padding: 0 10px;
+    color: #82aaff;
+}
+
+#keyboard-state {
+    padding: 0 10px;
+    color: #ffcb6b;
+}
+
+#tray {
+    padding: 0 8px;
+}
+
+#clock {
+    padding: 0 10px;
+    color: #c792ea;
+}
+
+#idle_inhibitor {
+    padding: 0 10px;
+    color: #ff5370;
+}
+
+#custom-power {
+    padding: 0 10px;
+    color: #f07178;
+}
+
+#window {
+    padding: 0 10px;
+}
+
+/* Optional: Hover/focus/active states for interactivity */
+#workspaces button.active,
+#sway-workspaces button.active {
+    background: #383c4a;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+#workspaces button.urgent,
+#sway-workspaces button.urgent {
+    background: #ff5370;
+    color: #ffffff;
+}
+
+/* Tooltip styling */
+tooltip {
+    background: #232634;
+    color: #e0e0e0;
+    border-radius: 4px;
+    border: 1px solid #383c4a;
+    padding: 6px 10px;
+    font-size: 12px;
+}

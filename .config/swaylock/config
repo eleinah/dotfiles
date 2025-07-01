@@ -4,7 +4,7 @@ font=Departure Mono
 clock
 timestr=%R
 
-image=/home/ellie/.config/sway/wallpaper.jpg
+image=/home/ellie/.config/sway/wallpapers/2.png
 
 fade-in=0.4
 

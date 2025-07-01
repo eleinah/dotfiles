@@ -67,7 +67,7 @@ def format_time(time):
 
 
 def format_temp(temp):
-    return (hour["tempC"] + "°").ljust(3)
+    return (hour["tempF"] + "°").ljust(3)
 
 
 def format_chances(hour):
@@ -115,7 +115,7 @@ for i, day in enumerate(weather["weather"]):
     if i == 1:
         data["tooltip"] += "Tomorrow, "
     data["tooltip"] += f"{day['date']}</b>\n"
-    data["tooltip"] += f"⬆️ {day['maxtempC']}° ⬇️ {day['mintempC']}° "
+    data["tooltip"] += f"⬆️ {day['maxtempF']}° ⬇️ {day['mintempF']}° "
     data[
         "tooltip"
     ] += f"🌅 {day['astronomy'][0]['sunrise']} 🌇 {day['astronomy'][0]['sunset']}\n"
@@ -125,7 +125,7 @@ for i, day in enumerate(weather["weather"]):
                 continue
         data[
             "tooltip"
-        ] += f"{format_time(hour['time'])} {WEATHER_CODES[hour['weatherCode']]} {format_temp(hour['tempC'])} {hour['weatherDesc'][0]['value']}, {format_chances(hour)}\n"
+        ] += f"{format_time(hour['time'])} {WEATHER_CODES[hour['weatherCode']]} {format_temp(hour['tempF'])} {hour['weatherDesc'][0]['value']}, {format_chances(hour)}\n"
 
 
 print(json.dumps(data))

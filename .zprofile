@@ -1,15 +1,9 @@
 # env vars to set on login, zsh settings in ~/.zshrc
 # read first
 
-# Start Sway
-if [[ -z "$WAYLAND_DISPLAY" && -n "$XDG_VTNR" && "$XDG_VTNR" -eq 1 ]]; then
-	exec sway
-fi
-
 # default programs
 export EDITOR="nvim"
-export TERM="kitty"
-export TERMINAL="kitty"
+export TERM="xterm-kitty"
 export BROWSER="qutebrowser"
 
 # export DISPLAY=:0 # useful for some scripts
@@ -61,3 +55,8 @@ export LESS_TERMCAP_so="$(printf '%b' '[01;44;33m')"
 export LESS_TERMCAP_se="$(printf '%b' '[0m')"
 export LESS_TERMCAP_us="$(printf '%b' '[1;32m')"
 export LESS_TERMCAP_ue="$(printf '%b' '[0m')"
+
+# Start Sway
+if [[ -z "$WAYLAND_DISPLAY" && -n "$XDG_VTNR" && "$XDG_VTNR" -eq 1 ]]; then
+	exec sway
+fi

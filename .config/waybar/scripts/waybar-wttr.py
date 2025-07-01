@@ -89,7 +89,7 @@ def format_chances(hour):
     return ", ".join(conditions)
 
 
-tempint = int(weather["current_condition"][0]["temp_C"])
+tempint = int(weather["current_condition"][0]["temp_F"])
 extrachar = ""
 if tempint > 0 and tempint < 10:
     extrachar = "+"
@@ -98,12 +98,12 @@ if tempint > 0 and tempint < 10:
 data["text"] = (
     WEATHER_CODES[weather["current_condition"][0]["weatherCode"]]
     + extrachar
-    + weather["current_condition"][0]["temp_C"]
+    + weather["current_condition"][0]["temp_F"]
     + "°"
 )
 
 data["tooltip"] = (
-    f"<b>{weather['current_condition'][0]['weatherDesc'][0]['value']} {weather['current_condition'][0]['temp_C']}°</b>\n"
+    f"<b>{weather['current_condition'][0]['weatherDesc'][0]['value']} {weather['current_condition'][0]['temp_F']}°</b>\n"
 )
 data["tooltip"] += f"Feels like: {weather['current_condition'][0]['FeelsLikeC']}°\n"
 data["tooltip"] += f"Wind: {weather['current_condition'][0]['windspeedKmph']}Km/h\n"

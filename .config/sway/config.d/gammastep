@@ -1,2 +1,2 @@
 # Start gammastep with specified coordinates
-exec gammastep -l LAT:LONG
+exec gammastep -l 0:0

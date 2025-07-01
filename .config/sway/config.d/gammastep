@@ -1,2 +1,2 @@
-# Start gammastep with St. Louis coordinates on Sway startup
+# Start gammastep on Sway startup
 exec gammastep -l 38.6270:-90.1994

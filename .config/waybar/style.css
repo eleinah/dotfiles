@@ -47,6 +47,24 @@ window#waybar {
   color: #83a598; /* Gruvbox blue */
 }
 
+#custom-playerctl {
+  padding: 0 10px;
+  color: #b8bb26; /* Gruvbox green for normal state */
+  background: transparent;
+  font-weight: 500;
+  transition: color 0.2s, background 0.2s;
+}
+
+#custom-playerctl.Playing {
+  color: #fabd2f;         /* Gruvbox yellow */
+  background: #3c3836;    /* Gruvbox bg1 for subtle highlight */
+}
+
+#custom-playerctl.Paused {
+  color: #928374;         /* Gruvbox gray */
+  background: transparent;
+}
+
 #cava {
   padding: 0 8px;
   color: #fabd2f; /* Gruvbox yellow */

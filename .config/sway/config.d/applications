@@ -26,3 +26,6 @@
     ## Assign Workspaces
     # assign [class="jetbrains-idea"] → workspace 2
     # assign [class="jetbrains-datagrip"] → workspace 2
+
+    # Use autotiling (must have github.com/nwg-piotr/autotiling installed)
+    exec_always autotiling

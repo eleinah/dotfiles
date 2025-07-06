@@ -151,7 +151,7 @@ tooltip {
 }
 
 /* Minimal separators for clarity */
-#cpu, #memory, #temperature, #network, #pulseaudio, #pulseaudio#microphone, #clock, #keyboard-state, #sway-language, #custom-weather, #custom-power, #idle_inhibitor {
+#cpu, #memory, #temperature, #network, #battery, #pulseaudio, #pulseaudio#microphone, #clock, #keyboard-state, #sway-language, #custom-weather, #custom-power, #idle_inhibitor {
   border-left: 1px solid #504945;
 }
 

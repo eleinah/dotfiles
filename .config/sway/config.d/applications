@@ -27,9 +27,6 @@
     # assign [class="jetbrains-idea"] → workspace 2
     # assign [class="jetbrains-datagrip"] → workspace 2
 
-    # Use autotiling (must have github.com/nwg-piotr/autotiling installed)
-    exec_always autotiling
-
     # The following helps with screensharing on Vesktop
     exec systemctl --user import-environment XDG_SESSION_TYPE XDG_CURRENT_DESKTOP
     exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP

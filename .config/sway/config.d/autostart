@@ -1,6 +1,6 @@
 ### Autostart applications    
     # Autostart applications, per workspace
-    exec swaymsg "workspace 1; exec vesktop;"
+    # exec swaymsg "workspace 1; exec vesktop;"
 
 ## Run software
 

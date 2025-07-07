@@ -4,7 +4,7 @@
 # default programs
 export EDITOR="nvim"
 export TERM="xterm-kitty"
-export BROWSER="qutebrowser"
+export BROWSER="firefox"
 
 # export DISPLAY=:0 # useful for some scripts
 

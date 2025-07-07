@@ -32,7 +32,7 @@
   ],
 
   "sway/scratchpad": {
-      "format": "♪",
+      "format": "",
       "disable-scroll": true,
       "warp-on-scroll": false
   },
@@ -43,8 +43,8 @@
       "warp-on-scroll": false,
       "format": "{name}{icon}",
       "format-icons": {
-	  "default": "●",
-	  "focused": "ᗧ"
+	  "default": "",
+	  "focused": ""
       }
   },
 
@@ -118,17 +118,17 @@
 	  "critical": 15
       },
       "format": "{capacity}% {icon}",
-      "format-charging": "{capacity}% (charging)",
-      "format-plugged": "{capacity}% (AC con)",
-      "format-full": "{capacity}% (full)",
-      "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+      "format-charging": "{capacity}% ",
+      "format-plugged": "{capacity}% ",
+      "format-full": "{capacity}% ",
+      "format-icons": ["", "", "", "", ""],
       "tooltip-format": "{time} remaining"
   },
 
   "pulseaudio": {
     "format": "{icon} {volume}%",
     "tooltip": false,
-    "format-muted": " Muted",
+    "format-muted": " Muted",
     "format-icons": {
         "headphone": "",
         "phone": "",
@@ -144,7 +144,7 @@
 
   "pulseaudio#microphone": {
     "format": "{format_source}",
-    "format-source": " {volume}% ",
+    "format-source": "{volume}% ",
     "tooltip": false,
     "format-source-muted": "",
     "on-click": "pamixer --default-source -t",
@@ -154,7 +154,7 @@
   },
 
   "custom/power": {
-      "format" : "⏻ ",
+      "format" : "⏻",
       "tooltip": false,
       "menu": "on-click",
       "menu-file": "$HOME/.config/waybar/power_menu.xml",

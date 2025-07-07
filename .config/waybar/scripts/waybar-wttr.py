@@ -105,7 +105,7 @@ data["text"] = (
 data["tooltip"] = (
     f"<b>{weather['current_condition'][0]['weatherDesc'][0]['value']} {weather['current_condition'][0]['temp_F']}°</b>\n"
 )
-data["tooltip"] += f"Feels like: {weather['current_condition'][0]['FeelsLikeC']}°\n"
+data["tooltip"] += f"Feels like: {weather['current_condition'][0]['FeelsLikeF']}°\n"
 data["tooltip"] += f"Wind: {weather['current_condition'][0]['windspeedKmph']}Km/h\n"
 data["tooltip"] += f"Humidity: {weather['current_condition'][0]['humidity']}%\n"
 for i, day in enumerate(weather["weather"]):

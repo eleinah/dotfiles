@@ -56,6 +56,8 @@ python-requests
 python-urllib3
 python-uv
 python-yaml
+qt6-wayland
+qutebrowser
 ripgrep
 rofi-wayland
 slurp
@@ -81,7 +83,9 @@ tmux
 ttf-arimo-nerd
 ttf-noto-nerd
 vesktop
+vhs
 vim
+viu
 vlc
 vulkan-radeon
 waybar-cava

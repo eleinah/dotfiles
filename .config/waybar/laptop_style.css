@@ -163,3 +163,15 @@ tooltip {
 .modules-right > widget:first-child > * {
   border-left: none;
 }
+
+/* Menu Colors */
+menu, menuitem {
+  background: #282828;   /* Gruvbox bg0_hard */
+  color: #ebdbb2;        /* Gruvbox fg */
+  border-radius: 4px;
+  border: 1px solid #504945;
+}
+menuitem:hover, menuitem:focus {
+  background: #3c3836;   /* Gruvbox bg1 */
+  color: #fabd2f;        /* Gruvbox yellow */
+}

@@ -112,10 +112,10 @@
 
   "battery": {
       "bat": "BAT0",
-      "interval": 30,
+      "interval": 20,
       "states": {
-          "warning": 30,
-	  "critical": 15
+          "warning": 20,
+	  "critical": 10
       },
       "format": "{capacity}% {icon}",
       "format-charging": "{capacity}% ",
@@ -130,10 +130,6 @@
     "tooltip": false,
     "format-muted": " Muted",
     "format-icons": {
-        "headphone": "",
-        "phone": "",
-        "portable": "",
-        "car": "",
         "default": ["", "", ""]
     },
     "on-scroll-up": "pamixer -i 2",
@@ -159,7 +155,7 @@
       "menu": "on-click",
       "menu-file": "$HOME/.config/waybar/power_menu.xml",
       "menu-actions": {
-          "shutdown": "shutdown",
+          "shutdown": "poweroff",
           "reboot": "reboot",
           "suspend": "systemctl suspend",
           "hibernate": "systemctl hibernate"
@@ -179,8 +175,8 @@
     "on-scroll-up": "playerctl -p spotify volume 0.02+",
     "on-scroll-down": "playerctl -p spotify volume 0.02-",
     "format-icons": {
-      "Paused": " ",
-      "Playing": " "
+      "Paused": "",
+      "Playing": ""
     }
   },
 

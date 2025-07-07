@@ -102,7 +102,7 @@
 
   "network": {
       "format-wifi": "{essid} ({signalStrength}%) ",
-      "format-ethernet": "{ipaddr}/{cidr}",
+      "format-ethernet": "{ipaddr}/{cidr} ",
       "tooltip-format": "{ifname} via {gwaddr}",
       "format-linked": "{ifname} (No IP)",
       "format-disconnected": "Disconnected ⚠",
@@ -112,12 +112,8 @@
   "pulseaudio": {
     "format": "{icon} {volume}%",
     "tooltip": false,
-    "format-muted": " Muted",
+    "format-muted": " Muted",
     "format-icons": {
-        "headphone": "",
-        "phone": "",
-        "portable": "",
-        "car": "",
         "default": ["", "", ""]
     },
     "on-scroll-up": "pamixer -i 2",
@@ -128,9 +124,9 @@
 
   "pulseaudio#microphone": {
     "format": "{format_source}",
-    "format-source": " {volume}% ",
+    "format-source": "{volume}% ",
     "tooltip": false,
-    "format-source-muted": "",
+    "format-source-muted": "Muted ",
     "on-click": "pamixer --default-source -t",
     "on-scroll-up": "pamixer --default-source -i 2",
     "on-scroll-down": "pamixer --default-source -d 2",
@@ -138,7 +134,7 @@
   },
 
   "custom/power": {
-      "format" : "⏻ ",
+      "format" : "⏻",
       "tooltip": false,
       "menu": "on-click",
       "menu-file": "$HOME/.config/waybar/power_menu.xml",
@@ -163,8 +159,8 @@
     "on-scroll-up": "playerctl -p spotify volume 0.02+",
     "on-scroll-down": "playerctl -p spotify volume 0.02-",
     "format-icons": {
-      "Paused": " ",
-      "Playing": " "
+      "Paused": "",
+      "Playing": ""
     }
   },
 

@@ -31,7 +31,7 @@
   ],
 
   "sway/scratchpad": {
-      "format": "♪",
+      "format": "",
       "disable-scroll": true,
       "warp-on-scroll": false
   },
@@ -40,10 +40,10 @@
       "disable-scroll": true,
       "all-outputs": false,
       "warp-on-scroll": false,
-      "format": "{name}{icon}",
+      "format": "{name} {icon}",
       "format-icons": {
-	  "default": "●",
-	  "focused": "ᗧ"
+	  "default": "",
+	  "focused": ""
       }
   },
 

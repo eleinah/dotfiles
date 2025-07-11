@@ -3,9 +3,9 @@ alias \
 c="clear" \
 v="nvim" \
 cat="bat" \
-l="ls -lh --color=auto --group-directories-first" \
-ls="ls -h --color=auto --group-directories-first" \
-la="ls -lah --color=auto --group-directories-first" \
+l="lsd -lh --color=auto --group-directories-first" \
+ls="lsd -h --color=auto --group-directories-first" \
+la="lsd -lah --color=auto --group-directories-first" \
 grep="grep --color=auto" \
 shell="exec $SHELL -l" \
 fk="sudo !!" \

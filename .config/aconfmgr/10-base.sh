@@ -15,7 +15,6 @@ AddPackage intel-ucode # Microcode update files for Intel CPUs
 AddPackage kitty # A modern, hackable, featureful, OpenGL-based terminal emulator
 AddPackage kitty-terminfo # Terminfo for kitty, an OpenGL-based terminal emulator
 AddPackage lib32-mesa # Open-source OpenGL drivers - 32-bit
-AddPackage lib32-vulkan-radeon # Open-source Vulkan driver for AMD GPUs - 32-bit
 AddPackage linux # The Linux kernel and modules
 AddPackage linux-firmware # Firmware files for Linux - Default set
 AddPackage lsd # Modern ls with a lot of pretty colors and awesome icons
@@ -35,7 +34,6 @@ AddPackage tcpdump # Powerful command-line packet analyzer
 AddPackage texinfo # GNU documentation system for on-line information and printed output
 AddPackage vhs # A tool for recording terminal GIFs
 AddPackage viu # Simple terminal image viewer
-AddPackage vulkan-radeon # Open-source Vulkan driver for AMD GPUs
 AddPackage which # A utility to show the full path of commands
 AddPackage xdg-desktop-portal # Desktop integration portals for sandboxed apps
 AddPackage xdg-desktop-portal-wlr # xdg-desktop-portal backend for wlroots

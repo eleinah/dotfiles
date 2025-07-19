@@ -4,7 +4,6 @@ AddPackage --foreign flameshot-git # Powerful yet simple to use screenshot softw
 AddPackage --foreign jetbrains-toolbox # Manage all your JetBrains Projects and Tools
 AddPackage --foreign license # A tool to easily add a license to your project
 AddPackage --foreign otf-departure-mono # a monospaced pixel font with a lo-fi technical vibe
-AddPackage --foreign plexamp-appimage # Modern music client for Plex
 AddPackage --foreign slack-desktop-wayland # Slack Desktop (Beta) for Linux with Wayland Support
 AddPackage --foreign spicetify-cli # Command-line tool to customize Spotify client
 AddPackage --foreign spicetify-marketplace-bin # Spicetify app that integrates a marketplace for extensions, themes and snippets

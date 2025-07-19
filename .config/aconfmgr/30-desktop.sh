@@ -13,5 +13,4 @@ AddPackage thunar # Modern, fast and easy-to-use file manager for Xfce
 AddPackage vlc # Multi-platform MPEG, VCD/DVD, and DivX player
 AddPackage wl-clipboard # Command-line copy/paste utilities for Wayland
 AddPackage wmenu # Efficient dynamic menu for Wayland and wlroots based Wayland compositors
-AddPackage xf86-video-amdgpu # X.org amdgpu video driver
 AddPackage xorg-xwayland # run X clients under wayland

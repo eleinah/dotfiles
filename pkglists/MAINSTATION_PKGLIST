@@ -1,3 +1,4 @@
+aria2
 autotiling
 base
 base-devel
@@ -13,6 +14,7 @@ expac
 fastfetch
 fd
 firefox
+flameshot-git
 fzf
 gammastep
 geoclue
@@ -29,8 +31,10 @@ kitty-terminfo
 less
 lib32-mesa
 lib32-vulkan-radeon
+license
 linux
 linux-firmware
+lsd
 mako
 man-db
 man-pages
@@ -56,10 +60,12 @@ python-requests
 python-urllib3
 python-uv
 python-yaml
-qt6-wayland
+qbittorrent
+qt6-imageformats
 qutebrowser
 ripgrep
 rofi-wayland
+slack-desktop-wayland
 slurp
 snap-pac
 snapper
@@ -84,7 +90,6 @@ ttf-arimo-nerd
 ttf-noto-nerd
 vesktop
 vhs
-vim
 viu
 vlc
 vulkan-radeon

@@ -40,14 +40,11 @@ HISTCONTROL=ignoreboth # consecutive duplicates & commands starting with space a
 
 # set up prompt
 NEWLINE=$'\n'
-PROMPT="${NEWLINE}%K{#282828}%F{#ebdbb2}$(date +%_I:%M%P) %K{#3c3836}%F{#fbf1c7} %n %K{#504945} %~ %f%k ❯ " # gruvbox dark theme
-# PROMPT="${NEWLINE}%K{#2E3440}%F{#E5E9F0}$(date +%_I:%M%P) %K{#3b4252}%F{#ECEFF4} %n %K{#4c566a} %~ %f%k ❯ " # nord theme
-# PROMPT="${NEWLINE}%K{#32302f}%F{#d5c4a1} $0 %K{#3c3836}%F{#d5c4a1} %n %K{#504945} %~ %f%k ❯ " # warmer theme
-# PROMPT="${NEWLINE}%K{$COL0}%F{$COL1}$(date +%_I:%M%P) %K{$COL0}%F{$COL2} %n %K{$COL3} %~ %f%k ❯ " # pywal colors, from postrun script
+PROMPT="${NEWLINE}%K{#1e1e2e}%F{#cdd6f4}$(date +%_I:%M%P) %K{#313244}%F{#f5e0dc} %n %K{#45475a}%F{#cba6f7} %~ %f%k ❯ "
+# PROMPT="${NEWLINE}%K{#282828}%F{#ebdbb2}$(date +%_I:%M%P) %K{#3c3836}%F{#fbf1c7} %n %K{#504945} %~ %f%k ❯ " # gruvbox dark theme
 
-echo -e "${NEWLINE}\033[48;2;60;56;54;38;2;235;219;178m $0 \033[0m\033[48;2;80;73;69;38;2;235;219;178m $(uptime -p | cut -c 4-) \033[0m\033[48;2;40;40;40;38;2;235;219;178m $(uname -r) \033[0m" # gruvbox dark theme
-# echo -e "${NEWLINE}\033[48;2;46;52;64;38;2;216;222;233m $0 \033[0m\033[48;2;59;66;82;38;2;216;222;233m $(uptime -p | cut -c 4-) \033[0m\033[48;2;76;86;106;38;2;216;222;233m $(uname -r) \033[0m" # nord theme
-# echo -e "${NEWLINE}\x1b[38;5;137m\x1b[48;5;0m it's$(date +%_I:%M%P) \x1b[38;5;180m\x1b[48;5;0m $(uptime -p | cut -c 4-) \x1b[38;5;223m\x1b[48;5;0m $(uname -r) \033[0m" # warmer theme
+echo -e "${NEWLINE}\033[48;2;30;30;46;38;2;205;214;244m $0 \033[0m\033[48;2;49;50;68;38;2;205;214;244m $(uptime -p | cut -c 4-) \033[0m\033[48;2;69;71;90;38;2;205;214;244m $(uname -r) \033[0m"
+# echo -e "${NEWLINE}\033[48;2;60;56;54;38;2;235;219;178m $0 \033[0m\033[48;2;80;73;69;38;2;235;219;178m $(uptime -p | cut -c 4-) \033[0m\033[48;2;40;40;40;38;2;235;219;178m $(uname -r) \033[0m" # gruvbox dark theme
 
 # autosuggestions
 # requires zsh-autosuggestions
@@ -63,3 +60,6 @@ source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 # Initialize Starship
 eval "$(starship init zsh)"
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"

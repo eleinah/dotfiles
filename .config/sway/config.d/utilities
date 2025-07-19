@@ -9,4 +9,6 @@
     bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
     bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
     # Special key to take a screenshot with grim
-    bindsym Print exec 'grim -g "$(slurp)" /home/ellie/Pictures/Screenshots/$(date +"screenshot_%Y-%m-%d-%H%M%S.png")'
+    ## bindsym Print exec 'grim -g "$(slurp)" /home/ellie/Pictures/Screenshots/$(date +"screenshot_%Y-%m-%d-%H%M%S.png")'
+    # Special key to take a screenshot with flameshot
+    bindsym Print exec 'flameshot gui'

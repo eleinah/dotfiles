@@ -27,6 +27,11 @@
     # assign [class="jetbrains-idea"] → workspace 2
     # assign [class="jetbrains-datagrip"] → workspace 2
 
+    # The following should help with Flameshot
+    exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
+    exec hash dbus-update-activation-environment 2>/dev/null && dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
+    for_window [app_id="flameshot"] border pixel 0, floating enable, fullscreen disable, move absolute position 0 0
+
     # The following helps with screensharing on Vesktop
     exec systemctl --user import-environment XDG_SESSION_TYPE XDG_CURRENT_DESKTOP
     exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP

@@ -108,6 +108,11 @@ window#waybar {
     color: #74c7ec; /* sky */
 }
 
+#battery {
+  padding: 0 10px;
+  color: #f9e2af;
+}
+
 #tray {
     padding: 0 8px;
 }

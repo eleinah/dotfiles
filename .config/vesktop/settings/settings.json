@@ -5,7 +5,7 @@
     "themeLinks": [],
     "eagerPatches": false,
     "enabledThemes": [
-        "system24-vencord.theme.css"
+        "system24-catppuccin-mocha.theme.css"
     ],
     "enableReactDevtools": false,
     "frameless": false,
@@ -96,7 +96,7 @@
             "enabled": false
         },
         "BiggerStreamPreview": {
-            "enabled": false
+            "enabled": true
         },
         "BlurNSFW": {
             "enabled": false
@@ -156,7 +156,7 @@
             "enabled": false
         },
         "ExpressionCloner": {
-            "enabled": false
+            "enabled": true
         },
         "F8Break": {
             "enabled": false
@@ -306,7 +306,10 @@
             "enabled": false
         },
         "NoReplyMention": {
-            "enabled": false
+            "enabled": true,
+            "userList": "1234567890123445,1234567890123445",
+            "shouldPingListed": true,
+            "inverseShiftReply": false
         },
         "NoServerEmojis": {
             "enabled": false
@@ -435,7 +438,8 @@
         "ShowHiddenChannels": {
             "enabled": true,
             "showMode": 0,
-            "hideUnreads": true
+            "hideUnreads": true,
+            "defaultAllowedUsersAndRolesDropdownState": true
         },
         "ShowHiddenThings": {
             "enabled": true,
@@ -591,6 +595,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1751337535066
+        "settingsSyncVersion": 1752949015714
     }
 }

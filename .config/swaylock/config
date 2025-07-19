@@ -4,15 +4,14 @@ font=Departure Mono
 clock
 timestr=%R
 
-image=/home/ellie/.config/sway/wallpapers/2.png
+image=/home/ellie/.config/sway/wallpapers/catppuccin/mocha/black-hole.png
 
-fade-in=0.4
+fade-in=0.5
 
 indicator-idle-visible
 # hide-keyboard-layout
 
-# effect-blur=6x2
-# effect-greyscale
+effect-blur=6x2
 effect-scale=1
 
 indicator
@@ -20,38 +19,32 @@ indicator-radius=120
 indicator-thickness=10
 indicator-caps-lock
 
-key-hl-color=458588eb
-
+color=1e1e2e
+bs-hl-color=f5e0dc
+caps-lock-bs-hl-color=f5e0dc
+caps-lock-key-hl-color=a6e3a1
+inside-color=00000000
+inside-clear-color=00000000
+inside-caps-lock-color=00000000
+inside-ver-color=00000000
+inside-wrong-color=00000000
+key-hl-color=a6e3a1
+layout-bg-color=00000000
+layout-border-color=00000000
+layout-text-color=cdd6f4
+line-color=00000000
+line-clear-color=00000000
+line-caps-lock-color=00000000
+line-ver-color=00000000
+line-wrong-color=00000000
+ring-color=b4befe
+ring-clear-color=f5e0dc
+ring-caps-lock-color=fab387
+ring-ver-color=89b4fa
+ring-wrong-color=eba0ac
 separator-color=00000000
-
-inside-color=282828eb
-inside-clear-color=282828eb
-inside-caps-lock-color=af3a03eb
-inside-ver-color=282828eb
-inside-wrong-color=9d0006eb
-
-ring-color=ebdbb2EB
-ring-clear-color=ebdbb2eb
-ring-caps-lock-color=af3a03eb
-ring-ver-color=ebdbb2eb
-ring-wrong-color=9d0006eb
-
-line-color=ebdbb2eb
-line-clear-color=ebdbb2eb
-line-caps-lock-color=af3a03eb
-line-ver-color=ebdbb2eb
-line-wrong-color=9d0006eb
-
-text-color=ebdbb2ff
-text-clear-color=ebdbb2ff
-text-ver-color=ebdbb2ff
-text-wrong-color=ebdbb2eb
-
-bs-hl-color=b57614eb
-caps-lock-key-hl-color=9d0006eb
-caps-lock-bs-hl-color=ebdbb2eb
-text-caps-lock-color=ebdbb2eb
-
-layout-bg-color=282828eb
-layout-border-color=ebdbb2ff
-layout-text-color=ebdbb2ff
+text-color=cdd6f4
+text-clear-color=f5e0dc
+text-caps-lock-color=fab387
+text-ver-color=89b4fa
+text-wrong-color=eba0ac

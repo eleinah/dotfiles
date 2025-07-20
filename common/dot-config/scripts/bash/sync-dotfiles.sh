@@ -25,9 +25,8 @@ fi
 
 echo "<=== Syncing dotfiles ===>"
 cd "$dots"
+git commit -am "Update dotfiles"
 git pull --rebase
-git add .
-git commit -m "Update dotfiles"
 git push
-stow -t "$HOME" -R common
-stow -t "$HOME" -R "$MACHINE_TYPE"
+stow -v -t "$HOME" -R common
+stow -v -t "$HOME" -R "$MACHINE_TYPE"

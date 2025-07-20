@@ -38,12 +38,12 @@ cd "$dots"
 
 if [ -n "$(git status --porcelain)" ]; then
 	echo "Please review 'git status' and 'git diff' first:"
-	sleep 2
+	sleep 1
 	
 	git status
 	read -rp "Continue? (y/n): " STATUS_CONFIRM
 	[[ "$STATUS_CONFIRM" == "y" || "$STATUS_CONFIRM" == "Y" ]] || exit 1
-	sleep 2
+	sleep 1
 	
 	git diff
 	read -rp "Continue? (y/n): " DIFF_CONFIRM
@@ -58,7 +58,7 @@ else
 	echo "Nothing to commit."
 fi
 
-if [ "$2" = "-v" ] || [ "$2" = "-V" ]; then
+if [ "${2:-}" = "-v" ] || [ "${2:-}" = "-V" ]; then
 	stow -v -t "$HOME" -R common --dotfiles
 	stow -v -t "$HOME" -R "$MACHINE_TYPE" --dotfiles
 else

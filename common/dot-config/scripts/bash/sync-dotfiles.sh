@@ -23,9 +23,28 @@ else
 	show_usage
 fi
 
+if [ -z "${dots:-}" ]; then
+	echo "Error!: 'dots' env var is not set. Check possible areas causing issue:"
+	echo "  - ~/.zprofile"
+	echo "  - ~/.zshrc"
+	echo "  - ~/.config/shell/vars"
+	exit 1
+fi
+
 echo "<=== Syncing dotfiles ===>"
 cd "$dots"
-git commit -am "Update dotfiles"
+echo "Please review 'git status' and 'git diff' first:"
+sleep 2
+git status
+read -rp "Continue? (y/n): " STATUS_CONFIRM
+[[ "$STATUS_CONFIRM" == "y" || "$STATUS_CONFIRM" == "Y" ]] || exit 1
+sleep 2
+git diff
+read -rp "Continue? (y/n): " DIFF_CONFIRM
+[[ "$DIFF_CONFIRM" == "y" || "$DIFF_CONFIRM" == "Y" ]] || exit 1
+read -rp "Please enter a commit message: " COMMIT_MSG
+git add .
+git commit -m "$COMMIT_MSG"
 git pull --rebase
 git push
 stow -v -t "$HOME" -R common

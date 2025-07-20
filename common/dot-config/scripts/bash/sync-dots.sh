@@ -42,13 +42,12 @@ if [ -n "$(git status --porcelain)" ]; then
 	
 	git status
 	read -rp "Continue? (y/n): " STATUS_CONFIRM
-	[[ "$STATUS_CONFIRM" == "y" || "$STATUS_CONFIRM" == "Y" ]] || exit 1
+	[[ "$STATUS_CONFIRM" =~ ^([yY]|[yY][eE][sS])$ ]] || exit 1
 	sleep 1
 	
 	git diff
 	read -rp "Continue? (y/n): " DIFF_CONFIRM
-	[[ "$DIFF_CONFIRM" == "y" || "$DIFF_CONFIRM" == "Y" ]] || exit 1
-
+	[[ "$DIFF_CONFIRM" =~ ^([yY]|[yY][eE][sS])$ ]] || exit 1
 	read -rp "Please enter a commit message: " COMMIT_MSG
 	git add .
 	git commit -m "$COMMIT_MSG"

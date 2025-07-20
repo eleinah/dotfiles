@@ -10,6 +10,14 @@ show_usage() {
 	exit 1
 }
 
+get_commit_msg() {
+	read -rp "Please enter a commit message: " COMMIT_MSG
+	if [ -z "$COMMIT_MSG" ]; then
+		echo "Commit message required"
+		get_commit_msg
+	fi
+}
+
 
 if [ $# -eq 0 ]; then
 	echo "No machine type specified."
@@ -48,7 +56,8 @@ if [ -n "$(git status --porcelain)" ]; then
 	git diff
 	read -rp "Continue? (y/n): " DIFF_CONFIRM
 	[[ "$DIFF_CONFIRM" =~ ^([yY]|[yY][eE][sS])$ ]] || exit 1
-	read -rp "Please enter a commit message: " COMMIT_MSG
+
+	get_commit_msg
 	git add .
 	git commit -m "$COMMIT_MSG"
 	git pull --rebase

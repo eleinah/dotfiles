@@ -47,6 +47,6 @@ git add .
 git commit -m "$COMMIT_MSG"
 git pull --rebase
 git push
-stow -v -t "$HOME" -R common
-stow -v -t "$HOME" -R "$MACHINE_TYPE"
+stow -v -t "$HOME" -R common --dotfiles
+stow -v -t "$HOME" -R "$MACHINE_TYPE" --dotfiles
 echo "<=== Dotfiles synced ===>"

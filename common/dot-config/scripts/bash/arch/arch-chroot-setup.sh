@@ -1,3 +1,17 @@
+#!/bin/bash
+
+set -e
+
+get_hostname() {
+	while true; do
+		read -rp "Enter a hostname: " HOST_INPUT
+		if [ -n "$HOST_INPUT" ]; then
+			break
+		fi
+		echo "Hostname required"
+	done
+}
+
 echo ":: Setting localtime..."
 ln -sf /usr/share/zoneinfo/America/Chicago /etc/localtime
 
@@ -10,7 +24,7 @@ locale-gen
 echo "LANG=en_US.UTF-8" > /etc/locale.conf
 
 echo ":: Setting hostname..."
-read -rp "Enter a hostname: " HOST_INPUT
+get_hostname
 echo "$HOST_INPUT" > /etc/hostname
 
 echo ":: Setting root password..."

@@ -29,10 +29,10 @@ if [ $# -eq 0 ]; then
 	echo "No machine type specified."
 	echo ""
 	show_usage
-elif [ "$1" = "mainstation" ] || [ "$1" = "travelstation" ]; then
-	MACHINE_TYPE="$1"
 elif [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
 	show_usage
+elif [ "$1" = "mainstation" ] || [ "$1" = "travelstation" ]; then
+	MACHINE_TYPE="$1"
 else
 	echo "Error: Invalid Option '$1'"
 	show_usage

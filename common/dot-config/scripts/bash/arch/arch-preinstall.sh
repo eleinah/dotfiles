@@ -18,11 +18,12 @@ timedatectl set-ntp true
 
 echo ":: Starting disk operations..."
 lsblk
-read -rp "Target disk: (i.e. /dev/nvme0n1)" DISK
+read -rp "Target disk: (i.e. /dev/nvme0n1) " DISK
 
 echo "WARNING: This will erase all data on $DISK !"
 read -rp "Type (y)es to continue: " CONFIRM
-[[ "$CONFIRM" == "y" || "$CONFIRM" == "yes" ]] || exit 1
+# [[ "$CONFIRM" == "y" || "$CONFIRM" == "yes" ]] || exit 1
+[[ "$CONFIRM" =~ ^([yY]|[yY][eE][sS])$ ]] || exit 1
 
 echo ":: Wiping signatures..."
 wipefs -a "$DISK"

@@ -64,5 +64,6 @@ if [ "$2" = "-v" ] || [ "$2" = "-V" ]; then
 else
 	stow -t "$HOME" -R common --dotfiles
 	stow -t "$HOME" -R "$MACHINE_TYPE" --dotfiles
+fi
 
 echo "<=== Dotfiles synced ===>"

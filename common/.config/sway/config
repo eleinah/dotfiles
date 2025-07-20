@@ -1,5 +1,0 @@
-# Using a modular config
-
-include /etc/sway/config.d/*
-include /home/ellie/.config/sway/variables
-include /home/ellie/.config/sway/config.d/*

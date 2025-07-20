@@ -1,5 +1,0 @@
-input type:touchpad {
-    tap enabled
-    tap_button_map lrm
-    dwt enabled
-}

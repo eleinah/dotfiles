@@ -1,5 +1,0 @@
-export GIT_EDITOR="nvim"
-export gh="$HOME/workspace/github.com/eleinah"
-export ws="$HOME/workspace"
-export PATH="$HOME/.cargo/bin:$PATH"
-export PATH="$HOME/bin:$PATH"

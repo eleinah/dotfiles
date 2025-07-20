@@ -1,5 +1,5 @@
-common/.config/vesktop/Crashpad/*
-common/.config/vesktop/SingletonCookie
-common/.config/vesktop/SingletonSocket
-common/.config/vesktop/sessionData/*
-common/.config/vesktop/SingletonLock
+common/dot-config/vesktop/Crashpad/*
+common/dot-config/vesktop/SingletonCookie
+common/dot-config/vesktop/SingletonSocket
+common/dot-config/vesktop/sessionData/*
+common/dot-config/vesktop/SingletonLock

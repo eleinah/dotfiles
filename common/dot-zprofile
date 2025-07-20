@@ -20,7 +20,8 @@ export LESSHISTFILE="$XDG_CACHE_HOME/less_history"
 export PYTHON_HISTORY="$XDG_DATA_HOME/python/history"
 
 # add scripts to path
-export PATH="$XDG_CONFIG_HOME/scripts:$PATH"
+export PATH="$XDG_CONFIG_HOME/scripts/bash:$PATH"
+export PATH="$XDG_CONFIG_HOME/scripts/python:$PATH"
 
 # moving other files and some other vars
 export CARGO_HOME="$XDG_DATA_HOME/cargo"

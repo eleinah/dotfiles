@@ -30,3 +30,4 @@ git pull --rebase
 git push
 stow -v -t "$HOME" -R common
 stow -v -t "$HOME" -R "$MACHINE_TYPE"
+echo "<=== Dotfiles synced ===>"

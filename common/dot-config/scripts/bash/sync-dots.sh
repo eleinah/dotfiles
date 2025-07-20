@@ -3,9 +3,10 @@
 set -euo pipefail
 
 show_usage() {
-	echo "Usage: $0 [mainstation|travelstation]"
+	echo "Usage: $0 [mainstation|travelstation] (-v)"
 	echo "  mainstation  - Sync desktop dotfiles"
 	echo "  travelstation  - Sync laptop dotfiles"
+	echo "  (-v)  - verbose Stow output"
 	exit 1
 }
 
@@ -34,19 +35,20 @@ fi
 echo "<=== Syncing dotfiles ===>"
 
 cd "$dots"
-echo "Please review 'git status' and 'git diff' first:"
-sleep 2
-
-git status
-read -rp "Continue? (y/n): " STATUS_CONFIRM
-[[ "$STATUS_CONFIRM" == "y" || "$STATUS_CONFIRM" == "Y" ]] || exit 1
-sleep 2
-
-git diff
-read -rp "Continue? (y/n): " DIFF_CONFIRM
-[[ "$DIFF_CONFIRM" == "y" || "$DIFF_CONFIRM" == "Y" ]] || exit 1
 
 if [ -n "$(git status --porcelain)" ]; then
+	echo "Please review 'git status' and 'git diff' first:"
+	sleep 2
+	
+	git status
+	read -rp "Continue? (y/n): " STATUS_CONFIRM
+	[[ "$STATUS_CONFIRM" == "y" || "$STATUS_CONFIRM" == "Y" ]] || exit 1
+	sleep 2
+	
+	git diff
+	read -rp "Continue? (y/n): " DIFF_CONFIRM
+	[[ "$DIFF_CONFIRM" == "y" || "$DIFF_CONFIRM" == "Y" ]] || exit 1
+
 	read -rp "Please enter a commit message: " COMMIT_MSG
 	git add .
 	git commit -m "$COMMIT_MSG"
@@ -56,7 +58,11 @@ else
 	echo "Nothing to commit."
 fi
 
-stow -v -t "$HOME" -R common --dotfiles
-stow -v -t "$HOME" -R "$MACHINE_TYPE" --dotfiles
+if [ "$2" = "-v" ] || [ "$2" = "-V" ]; then
+	stow -v -t "$HOME" -R common --dotfiles
+	stow -v -t "$HOME" -R "$MACHINE_TYPE" --dotfiles
+else
+	stow -t "$HOME" -R common --dotfiles
+	stow -t "$HOME" -R "$MACHINE_TYPE" --dotfiles
 
 echo "<=== Dotfiles synced ===>"

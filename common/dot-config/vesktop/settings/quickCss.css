@@ -1,0 +1,18 @@
+/* custom chat bar input text  */
+
+/* hide existing text */
+.placeholder__1b31f.slateTextArea_ec4baf.fontSize16Padding__74017 {
+    visibility: hidden;
+}
+
+/* add custom text */
+.placeholder__1b31f.slateTextArea_ec4baf.fontSize16Padding__74017::before {
+    visibility: visible;
+    content: "be silly :3"; /* replace var() with your desired text (in quotes) */
+    
+    /* for example:
+    
+    content: "i like snow cones";
+    
+    */
+}

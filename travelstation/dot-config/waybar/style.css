@@ -1,0 +1,179 @@
+/* Catppuccin Mocha Theme for Waybar */
+
+/* Global bar styling */
+
+* {
+    font-family: "DepartureMono Nerd Font", "JetBrainsMono Nerd Font", "monospace";
+    font-size: 13px;
+    min-height: 0;
+    box-shadow: none;
+    border-radius: 0;
+    border: none;
+    color: #c6d0f5; /* Catppuccin text */
+}
+
+window#waybar {
+    background: #1e1e2e; /* Catppuccin base */
+    border-bottom: 1px solid #45475a; /* Catppuccin surface1 */
+}
+
+/* Module blocks */
+
+#workspaces, #sway-workspaces {
+    margin: 0 6px;
+}
+
+#workspaces button, #sway-workspaces button {
+    background: transparent;
+    color: #c6d0f5;
+    border: none;
+    padding: 0 8px;
+    margin: 0 2px;
+    transition: background 0.2s, color 0.2s;
+}
+
+#workspaces button.active, #sway-workspaces button.active {
+    background: #45475a; /* surface1 */
+    color: #f9e2af;      /* yellow */
+    text-shadow: 0 1px 2px #313244;
+    border-radius: 4px;
+}
+
+#workspaces button.urgent, #sway-workspaces button.urgent {
+    background: #f38ba8; /* red */
+    color: #c6d0f5;
+    border-radius: 4px;
+}
+
+#custom-weather {
+    padding: 0 10px;
+    color: #89b4fa; /* blue */
+}
+
+#custom-playerctl {
+    padding: 0 10px;
+    color: #a6e3a1; /* green */
+    background: transparent;
+    font-weight: 500;
+    transition: color 0.2s, background 0.2s;
+}
+
+#custom-playerctl.Playing {
+    color: #f9e2af;      /* yellow */
+    background: #313244; /* surface0 */
+}
+
+#custom-playerctl.Paused {
+    color: #585b70;      /* overlay1 */
+    background: transparent;
+}
+
+#pulseaudio, #pulseaudio#microphone, #pulseaudio.microphone {
+    padding: 0 10px;
+    color: #a6e3a1; /* green */
+}
+
+#cpu {
+    padding: 0 10px;
+    color: #fab387; /* peach */
+}
+
+#memory {
+    padding: 0 10px;
+    color: #cba6f7; /* mauve */
+}
+
+#temperature {
+    padding: 0 10px;
+    color: #f38ba8; /* red */
+}
+
+#keyboard-state {
+    padding: 0 10px;
+    color: #f9e2af; /* yellow */
+}
+
+#sway-language {
+    padding: 0 10px;
+    color: #a6e3a1; /* green */
+}
+
+#clock {
+    padding: 0 10px;
+    color: #f9e2af; /* yellow */
+}
+
+#network {
+    padding: 0 10px;
+    color: #74c7ec; /* sky */
+}
+
+#battery {
+  padding: 0 10px;
+  color: #f9e2af;
+}
+
+#tray {
+    padding: 0 8px;
+}
+
+#custom-power {
+    padding: 0 10px;
+    color: #f38ba8; /* red */
+}
+
+#idle_inhibitor {
+    padding: 0 10px;
+    color: #cba6f7; /* mauve */
+}
+
+/* Optional: hover/focus/active states for interactivity */
+
+#workspaces button:hover, #sway-workspaces button:hover {
+    background: #313244; /* surface0 */
+    color: #f9e2af;
+}
+
+#workspaces button.focused, #sway-workspaces button.focused {
+    background: #cba6f7; /* mauve */
+    color: #c6d0f5;
+}
+
+/* Tooltip styling */
+
+tooltip {
+    background: #1e1e2e;      /* base */
+    color: #c6d0f5;
+    border-radius: 4px;
+    border: 1px solid #45475a; /* surface1 */
+    padding: 6px 10px;
+    font-size: 12px;
+}
+
+/* Minimal separators for clarity */
+
+#cpu, #memory, #temperature, #network, #pulseaudio, #pulseaudio#microphone, #clock, #keyboard-state, #sway-language, #custom-weather, #custom-power, #idle_inhibitor {
+    border-left: 1px solid #45475a;
+}
+
+#cpu { border-left: none; } /* Remove left border from first module in the group */
+
+/* Hide module borders if they're first in their segment */
+.modules-left > widget:first-child > * ,
+.modules-center > widget:first-child > * ,
+.modules-right > widget:first-child > * {
+    border-left: none;
+}
+
+/* Menu Colors */
+menu, menuitem {
+    background: #1e1e2e; /* base */
+    color: #c6d0f5;
+    border-radius: 4px;
+    border: 1px solid #45475a;
+}
+
+menuitem:hover, menuitem:focus {
+    background: #313244; /* surface0 */
+    color: #f9e2af; /* yellow */
+}

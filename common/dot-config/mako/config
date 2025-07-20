@@ -1,0 +1,7 @@
+anchor=top-right
+default-timeout=5000
+font=DepartureMono 14px
+background-color=#282828
+text-color=#ebdbb2
+border-color=#282828
+progress-color=over #ebdbb2

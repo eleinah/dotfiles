@@ -11,11 +11,13 @@ show_usage() {
 }
 
 get_commit_msg() {
-	read -rp "Please enter a commit message: " COMMIT_MSG
-	if [ -z "$COMMIT_MSG" ]; then
+	while true; do
+		read -rp "Please enter a commit message: " COMMIT_MSG
+		if [ -n "$COMMIT_MSG" ]; then
+			break
+		fi
 		echo "Commit message required"
-		get_commit_msg
-	fi
+	done
 }
 
 

@@ -32,21 +32,31 @@ if [ -z "${dots:-}" ]; then
 fi
 
 echo "<=== Syncing dotfiles ===>"
+
 cd "$dots"
 echo "Please review 'git status' and 'git diff' first:"
 sleep 2
+
 git status
 read -rp "Continue? (y/n): " STATUS_CONFIRM
 [[ "$STATUS_CONFIRM" == "y" || "$STATUS_CONFIRM" == "Y" ]] || exit 1
 sleep 2
+
 git diff
 read -rp "Continue? (y/n): " DIFF_CONFIRM
 [[ "$DIFF_CONFIRM" == "y" || "$DIFF_CONFIRM" == "Y" ]] || exit 1
-read -rp "Please enter a commit message: " COMMIT_MSG
-git add .
-git commit -m "$COMMIT_MSG"
-git pull --rebase
-git push
+
+if [ -n "$(git status --porcelain)" ]; then
+	read -rp "Please enter a commit message: " COMMIT_MSG
+	git add .
+	git commit -m "$COMMIT_MSG"
+	git pull --rebase
+	git push
+else
+	echo "Nothing to commit."
+fi
+
 stow -v -t "$HOME" -R common --dotfiles
 stow -v -t "$HOME" -R "$MACHINE_TYPE" --dotfiles
+
 echo "<=== Dotfiles synced ===>"

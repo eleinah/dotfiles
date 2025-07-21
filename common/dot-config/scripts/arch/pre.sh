@@ -62,7 +62,7 @@ pacstrap -K /mnt base linux linux-firmware intel-ucode btrfs-progs sof-firmware 
 genfstab -U /mnt >> /mnt/etc/fstab
 
 echo ":: chroot'ing into /mnt..."
-arch-chroot /mnt /root/setup-chroot.sh
+arch-chroot /mnt /root/chroot-setup.sh
 
 echo ":: Unmounting..."
 umount -R /mnt

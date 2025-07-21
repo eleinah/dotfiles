@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+set -uo pipeline
 
 get_hostname() {
 	while true; do

@@ -21,7 +21,7 @@ AddPackage lsd # Modern ls with a lot of pretty colors and awesome icons
 AddPackage man-db # A utility for reading man pages
 AddPackage man-pages # Linux man pages
 AddPackage mesa-utils # Essential Mesa utilities
-AddPackage neovim # Fork of Vim aiming to improve user experience, plugins, and GUIs
+AddPackage vim
 AddPackage pacman-contrib # Contributed scripts and tools for pacman systems
 AddPackage qt6-imageformats # Plugins for additional image formats: TIFF, MNG, TGA, WBMP
 AddPackage snap-pac # Pacman hooks that use snapper to create pre/post btrfs snapshots like openSUSE's YaST
@@ -46,3 +46,6 @@ AddPackage grep # A string search utility
 AddPackage less # A terminal based program for viewing text files
 AddPackage ripgrep # A search tool that combines the usability of ag with the raw speed of grep
 AddPackage stow # Manage installation of multiple softwares in the same directory tree
+AddPackage dhcpcd
+AddPackage iwd
+AddPackage polkit

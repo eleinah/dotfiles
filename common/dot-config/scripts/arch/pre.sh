@@ -53,11 +53,11 @@ swapon "$SWAP"
 
 echo ":: Downloading setup-chroot.sh..."
 mkdir -p /mnt/root
-curl -fsSL "https://raw.githubusercontent.com/eleinah/dotfiles/main/common/dot-config/scripts/bash/arch/arch-chroot-setup.sh" -o /mnt/root/setup-chroot.sh
-chmod +x /mnt/root/setup-chroot.sh
+curl -fsSL "https://raw.githubusercontent.com/eleinah/dotfiles/main/common/dot-config/scripts/arch/chroot-setup.sh" -o /mnt/root/chroot-setup.sh
+chmod +x /mnt/root/chroot-setup.sh
 
 echo ":: Starting base install..."
-pacstrap -K /mnt base linux linux-firmware intel-ucode btrfs-progs sof-firmware vim man-db man-pages texinfo curl dbus dhcpcd grep grub efibootmgr iwd kitty-terminfo nmap polkit python sudo systemd tmux zsh
+pacstrap -K /mnt base linux linux-firmware intel-ucode btrfs-progs sof-firmware vim man-db man-pages texinfo curl dhcpcd grep grub efibootmgr iwd kitty-terminfo nmap polkit python sudo systemd tmux zsh
 
 genfstab -U /mnt >> /mnt/etc/fstab
 

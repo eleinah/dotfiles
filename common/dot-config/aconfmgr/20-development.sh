@@ -11,3 +11,4 @@ AddPackage python-urllib3 # HTTP library with thread-safe connection pooling and
 AddPackage python-uv # An extremely fast Python package installer and resolver written in Rust
 AddPackage python-yaml # Python bindings for YAML, using fast libYAML library
 AddPackage qutebrowser # A keyboard-driven, vim-like browser based on Python and Qt
+AddPackage neovim

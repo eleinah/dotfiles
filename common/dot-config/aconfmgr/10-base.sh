@@ -46,6 +46,4 @@ AddPackage grep # A string search utility
 AddPackage less # A terminal based program for viewing text files
 AddPackage ripgrep # A search tool that combines the usability of ag with the raw speed of grep
 AddPackage stow # Manage installation of multiple softwares in the same directory tree
-AddPackage dhcpcd
-AddPackage iwd
 AddPackage polkit

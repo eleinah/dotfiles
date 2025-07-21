@@ -89,3 +89,30 @@ IgnorePath '/usr/share/mime/*'
 
 # Ignore Spotify
 IgnorePath '/opt/spotify/*'
+
+# For arch install scripts to work properly
+IgnorePackage base
+IgnorePackage linux 
+IgnorePackage linux-firmware 
+IgnorePackage intel-ucode 
+IgnorePackage btrfs-progs 
+IgnorePackage sof-firmware 
+IgnorePackage vim 
+IgnorePackage man-db 
+IgnorePackage man-pages 
+IgnorePackage texinfo
+IgnorePackage curl
+IgnorePackage dbus
+IgnorePackage dhcpc
+IgnorePackage grep 
+IgnorePackage grub
+IgnorePackage efibootmgr
+IgnorePackage iwd
+IgnorePackage kitty-terminfo
+IgnorePackage nmap
+IgnorePackage polkit
+IgnorePackage python
+IgnorePackage sudo
+IgnorePackage systemd
+IgnorePackage tmux
+IgnorePackage zsh

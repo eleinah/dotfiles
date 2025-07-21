@@ -46,30 +46,3 @@ AddPackage grep # A string search utility
 AddPackage less # A terminal based program for viewing text files
 AddPackage ripgrep # A search tool that combines the usability of ag with the raw speed of grep
 AddPackage stow # Manage installation of multiple softwares in the same directory tree
-
-# For arch-postinstall.sh to work properly
-AddPackage base
-AddPackage linux 
-AddPackage linux-firmware 
-AddPackage intel-ucode 
-AddPackage btrfs-progs 
-AddPackage sof-firmware 
-AddPackage vim 
-AddPackage man-db 
-AddPackage man-pages 
-AddPackage texinfo
-AddPackage curl
-AddPackage dbus
-AddPackage dhcpc
-AddPackage grep 
-AddPackage grub
-AddPackage efibootmgr
-AddPackage iwd
-AddPackage kitty-terminfo
-AddPackage nmap
-AddPackage polkit
-AddPackage python
-AddPackage sudo
-AddPackage systemd
-AddPackage tmux
-AddPackage zsh

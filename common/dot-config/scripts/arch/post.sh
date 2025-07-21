@@ -87,12 +87,11 @@ fi
 if [ -f "$HOME/.zprofile" ]; then
 	rm "$HOME/.zprofile"
 fi
-stow -t ~ common
-stow -t ~ "$MACHINE_TYPE"
+stow -v -t ~ common --dotfiles
+stow -v -t ~ "$MACHINE_TYPE" --dotfiles
 
 echo ":: Applying aconfmgr..."
 mkdir -p $HOME/.config/aconfmgr
-cd $HOME/.config/aconfmgr
 aconfmgr apply
 
 echo "<=== Post-install complete! ===>"

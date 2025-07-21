@@ -1,7 +1,7 @@
 #!/bin/bash
 # pre.sh
 
-set -euo pipefail
+set -uo pipefail
 
 echo "<=== Starting pre-install ===>"
 

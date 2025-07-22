@@ -48,3 +48,4 @@ AddPackage ripgrep # A search tool that combines the usability of ag with the ra
 AddPackage stow # Manage installation of multiple softwares in the same directory tree
 AddPackage polkit
 AddPackage bottom # A graphical process/system monitor
+AddPackage unzip # For extracting and viewing files in .zip archives

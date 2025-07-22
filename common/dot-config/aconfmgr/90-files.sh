@@ -1,9 +1,14 @@
 # File management and system setup files
+
 CopyFile /etc/pacman.conf
+
+CreateFile /etc/subuid- > /dev/null
 
 CreateFile /etc/subgid- > /dev/null
 
-CreateFile /etc/subuid- > /dev/null
+RemoveFile /etc/subuid-
+
+RemoveFile /etc/subgid-
 
 CopyFile /etc/sudoers
 

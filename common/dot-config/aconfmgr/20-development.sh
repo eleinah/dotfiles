@@ -12,3 +12,4 @@ AddPackage python-uv # An extremely fast Python package installer and resolver w
 AddPackage python-yaml # Python bindings for YAML, using fast libYAML library
 AddPackage qutebrowser # A keyboard-driven, vim-like browser based on Python and Qt
 AddPackage neovim
+AddPackage emacs # The extensible, customizable, self-documenting real-time display editor

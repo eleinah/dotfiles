@@ -46,7 +46,19 @@ echo "<=== Syncing dotfiles ===>"
 
 cd "$dots"
 
+LOCAL_GIT=$(git rev-parse @)
+REMOTE_GIT=$(git rev-parse @{u})
+BASE_GIT=$(git merge-base @ @{u})
+
+if [ "$LOCAL_GIT" = "$REMOTE_GIT" ]; then
+	echo "Local and remote repositories in sync."
+elif [ "$LOCAL_GIT" = "$BASE_GIT" ]; then
+	echo "Remote has updates, commencing pull..."
+	git pull --rebase
+fi
+
 if [ -n "$(git status --porcelain)" ]; then
+	echo "Found local changes to commit and push..."
 	echo "Please review 'git status' and 'git diff' first:"
 	sleep 1
 	
@@ -58,15 +70,12 @@ if [ -n "$(git status --porcelain)" ]; then
 	git diff
 	read -rp "Continue? (y/n): " DIFF_CONFIRM
 	[[ "$DIFF_CONFIRM" =~ ^([yY]|[yY][eE][sS])$ ]] || exit 1
-
 	get_commit_msg
 	git add .
 	git commit -m "$COMMIT_MSG"
-	git pull --rebase
 	git push
 else
-	echo "Nothing to commit."
-	# git pull --rebase
+	echo "Nothing to commit and push."
 fi
 
 if [ "${2:-}" = "-v" ] || [ "${2:-}" = "-V" ]; then

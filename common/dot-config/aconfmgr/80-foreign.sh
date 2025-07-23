@@ -13,3 +13,4 @@ AddPackage --foreign vesktop # A standalone Electron-based Discord app with Venc
 AddPackage --foreign waybar-cava # Highly customizable Wayland bar for Sway and Wlroots based compositors, with module cava (Cross-platform Audio Visualizer)
 AddPackage --foreign yay # Yet another yogurt. Pacman wrapper and AUR helper written in go.
 AddPackage --foreign yay-debug # Detached debugging symbols for yay
+AddPackage --foreign codeberg-cli # CLI Tool for Codeberg similar to gh and glab

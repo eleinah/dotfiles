@@ -3,7 +3,7 @@
 
 # default programs
 export EDITOR="nvim"
-export TERM="xterm-kitty"
+export TERM="kitty"
 export BROWSER="firefox"
 
 # export DISPLAY=:0 # useful for some scripts
@@ -22,6 +22,9 @@ export PYTHON_HISTORY="$XDG_DATA_HOME/python/history"
 # add scripts to path
 export PATH="$XDG_CONFIG_HOME/scripts/bash:$PATH"
 export PATH="$XDG_CONFIG_HOME/scripts/python:$PATH"
+
+# add Doom Emacs to path
+export PATH="$HOME/.emacs.d/bin:$PATH"
 
 # moving other files and some other vars
 export CARGO_HOME="$XDG_DATA_HOME/cargo"

@@ -2,9 +2,9 @@
 
 CopyFile /etc/pacman.conf
 
-CreateFile /etc/subuid- > /dev/null
+CreateFile /etc/subuid- >/dev/null
 
-CreateFile /etc/subgid- > /dev/null
+CreateFile /etc/subgid- >/dev/null
 
 RemoveFile /etc/subuid-
 
@@ -255,3 +255,4 @@ CopyFile /usr/lib/ghc-9.4.8/lib/package.conf.d/xml-types-0.3.8-IpGyuvvNOu2AH1SOo
 CopyFile /usr/lib/ghc-9.4.8/lib/package.conf.d/yaml-0.11.11.2-EmOeXA0EbKy7yEQwIKCezQ.conf
 CopyFile /usr/lib/ghc-9.4.8/lib/package.conf.d/zip-archive-0.4.3.2-7IcyhlU1nSQ6X2IF73hXi4.conf
 CopyFile /usr/lib/ghc-9.4.8/lib/package.conf.d/zlib-0.6.3.0-H3IC0Or0Xq79ax1pxpmaMo.conf
+CopyFile /usr/lib/gconv/gconv-modules.cache

@@ -79,11 +79,11 @@ else
 fi
 
 if [ "${2:-}" = "-v" ] || [ "${2:-}" = "-V" ]; then
-	stow -v -t "$HOME" -R common --dotfiles
-	stow -v -t "$HOME" -R "$MACHINE_TYPE" --dotfiles
+	stow -v -t "$HOME" -R common --dotfiles --adopt
+	stow -v -t "$HOME" -R "$MACHINE_TYPE" --dotfiles --adopt
 else
-	stow -t "$HOME" -R common --dotfiles
-	stow -t "$HOME" -R "$MACHINE_TYPE" --dotfiles
+	stow -t "$HOME" -R common --dotfiles --adopt
+	stow -t "$HOME" -R "$MACHINE_TYPE" --dotfiles --adopt
 	echo "GNU Stow operations complete."
 fi
 

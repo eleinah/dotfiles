@@ -1,7 +1,7 @@
 #!/bin/bash
 # post.sh
 # -
-# use after pre.sh 
+# use after pre.sh
 
 set -euo pipefail
 
@@ -15,7 +15,7 @@ show_usage() {
 check_network() {
 	local retries=3
 	for i in $(seq 1 $retries); do
-		if ping -c 1 8.8.8.8 &> /dev/null; then
+		if ping -c 1 8.8.8.8 &>/dev/null; then
 			return 0
 		fi
 		echo "Network check attempt $i/$retries failed, retrying..."
@@ -42,11 +42,11 @@ echo "<=== Starting post-install deployment ===>"
 
 HOME="/home/ellie"
 
-if [ ! -d "$HOME/workspace/github.com/eleinah" ]; then
-	mkdir -p "$HOME/workspace/github.com/eleinah"
+if [ ! -d "$HOME/workspace/codeberg.org/eleina" ]; then
+	mkdir -p "$HOME/workspace/codeberg.org/eleina"
 fi
 
-GHWS="$HOME/workspace/github.com/eleinah"
+GHWS="$HOME/workspace/codeberg.org/eleina"
 
 echo ":: Checking network connectivity..."
 check_network
@@ -60,7 +60,7 @@ sudo pacman -S --noconfirm git stow
 echo ":: Installing dependencies for AUR..."
 sudo pacman -S --noconfirm base-devel devtools
 
-if ! command -v yay &> /dev/null; then
+if ! command -v yay &>/dev/null; then
 	echo ":: Installing yay..."
 	cd /tmp
 	git clone https://aur.archlinux.org/yay.git
@@ -76,7 +76,7 @@ yay -S --noconfirm --needed aconfmgr-git
 echo ":: Cloning dotfiles repo..."
 cd "$GHWS"
 if [ ! -d "dotfiles" ]; then
-	git clone https://github.com/eleinah/dotfiles.git
+	git clone https://codeberg.org/eleina/dotfiles.git
 fi
 
 echo ":: Deploying dotfiles for $MACHINE_TYPE ..."

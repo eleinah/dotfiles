@@ -6,7 +6,7 @@ set -uo pipefail
 echo "<=== Starting pre-install ===>"
 
 echo ":: Checking network connectivity..."
-if ping -c 1 archlinux.org &> /dev/null; then
+if ping -c 1 archlinux.org &>/dev/null; then
 	echo "Network OK"
 else
 	echo "No network connectivity. Please connect before running this."
@@ -53,13 +53,13 @@ swapon "$SWAP"
 
 echo ":: Downloading setup-chroot.sh..."
 mkdir -p /mnt/root
-curl -fsSL "https://raw.githubusercontent.com/eleinah/dotfiles/main/common/dot-config/scripts/arch/chroot-setup.sh" -o /mnt/root/chroot-setup.sh
+curl -fsSL "https://codeberg.org/eleina/dotfiles/raw/branch/main/common/dot-config/scripts/arch/chroot-setup.sh" -o /mnt/root/chroot-setup.sh
 chmod +x /mnt/root/chroot-setup.sh
 
 echo ":: Starting base install..."
 pacstrap -K /mnt base linux linux-firmware intel-ucode btrfs-progs sof-firmware vim man-db man-pages texinfo curl dhcpcd grep grub efibootmgr iwd kitty-terminfo nmap polkit python sudo systemd tmux zsh
 
-genfstab -U /mnt >> /mnt/etc/fstab
+genfstab -U /mnt >>/mnt/etc/fstab
 
 echo ":: chroot'ing into /mnt..."
 arch-chroot /mnt /root/chroot-setup.sh

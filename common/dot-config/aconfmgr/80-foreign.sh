@@ -17,3 +17,4 @@ AddPackage --foreign codeberg-cli              # CLI Tool for Codeberg similar t
 AddPackage --foreign gomodifytags              # Go tool to modify struct field tags
 AddPackage --foreign gore                      # Yet another Go REPL that works nicely
 AddPackage --foreign gotests                   # Golang commandline tool that generates table driven tests based on its target source files function and method signatures
+AddPackage --foreign scc                       # Sloc, Cloc and Code: a very fast accurate code counter with complexity calculations and COCOMO estimates written in pure Go

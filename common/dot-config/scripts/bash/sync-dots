@@ -20,7 +20,6 @@ get_commit_msg() {
 	done
 }
 
-
 if [ $# -eq 0 ]; then
 	echo "No machine type specified."
 	echo ""
@@ -46,27 +45,36 @@ echo "<=== Syncing dotfiles ===>"
 
 cd "$dots"
 
-LOCAL_GIT=$(git rev-parse @)
-REMOTE_GIT=$(git rev-parse @{u})
-BASE_GIT=$(git merge-base @ @{u})
+LOCAL_GIT=$(git rev-parse @ 2>/dev/null)
+REMOTE_GIT=$(git rev-parse @{u} 2>/dev/null)
+BASE_GIT=$(git merge-base @ @{u} 2>/dev/null)
+
+if [ -z "$LOCAL_GIT" ] || [ -z "$REMOTE_GIT" ] || [ -z "$BASE_GIT" ]; then
+	echo "Error: Could not determine Git hashes. Is the upstream set correctly?"
+	exit 1
+fi
 
 if [ "$LOCAL_GIT" = "$REMOTE_GIT" ]; then
 	echo "Local and remote repositories in sync."
 elif [ "$LOCAL_GIT" = "$BASE_GIT" ]; then
 	echo "Remote has updates, commencing pull..."
 	git pull --rebase
+elif [ "$REMOTE_GIT" = "$BASE_GIT" ]; then
+	echo "Local has updates that need to be pushed."
+else
+	echo "Local and remote have diverged. Manual intervention may be required."
 fi
 
 if [ -n "$(git status --porcelain)" ]; then
 	echo "Found local changes to commit and push..."
 	echo "Please review 'git status' and 'git diff' first:"
 	sleep 1
-	
+
 	git status
 	read -rp "Continue? (y/n): " STATUS_CONFIRM
 	[[ "$STATUS_CONFIRM" =~ ^([yY]|[yY][eE][sS])$ ]] || exit 1
 	sleep 1
-	
+
 	git diff
 	read -rp "Continue? (y/n): " DIFF_CONFIRM
 	[[ "$DIFF_CONFIRM" =~ ^([yY]|[yY][eE][sS])$ ]] || exit 1

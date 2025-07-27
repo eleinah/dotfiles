@@ -2,7 +2,7 @@
 # read first
 
 # default programs
-export EDITOR="nvim"
+export EDITOR="emacsclient -c -a 'emacs'"
 export TERM="kitty"
 export BROWSER="firefox"
 
@@ -18,6 +18,10 @@ export XDG_SESSION_DESKTOP=sway
 # history files
 export LESSHISTFILE="$XDG_CACHE_HOME/less_history"
 export PYTHON_HISTORY="$XDG_DATA_HOME/python/history"
+
+# cursor defaults
+export XCURSOR_THEME=Adwaita
+export XCURSOR_SIZE=24
 
 # add scripts to path
 export PATH="$XDG_CONFIG_HOME/scripts/bash:$PATH"

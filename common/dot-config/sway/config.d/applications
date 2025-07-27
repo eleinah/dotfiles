@@ -15,6 +15,7 @@
     ## Add opacity to unmanaged applications
     for_window [app_id="kitty"] opacity 0.95
     for_window [class="Spotify"] opacity 0.85
+    for_window [class="Emacs"] opacity 0.95
 
     ##Tag xwayland windows
     for_window [shell="xwayland"] title_format "<span>[X] %title</span>"

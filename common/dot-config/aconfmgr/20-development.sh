@@ -31,3 +31,5 @@ AddPackage tealdeer           # A fast tldr client in Rust
 AddPackage tree-sitter-bash   # Bash grammar for tree-sitter
 AddPackage tree-sitter-python # Python grammar for tree-sitter
 AddPackage tree-sitter-rust   # Rust grammar for tree-sitter
+AddPackage ispell             # An interactive spell-checking program for Unix
+AddPackage pyright            # Type checker for the Python language

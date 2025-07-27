@@ -1,6 +1,9 @@
 # Start a terminal
 bindsym $mod+Return exec $term
 
+# Start a Doom Emacs client
+bindsym $mod+Shift+Return exec $doom
+
 # Kill focused window
 bindsym $mod+Shift+q kill
 

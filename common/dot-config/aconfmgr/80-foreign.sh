@@ -13,7 +13,6 @@ AddPackage --foreign vesktop                   # A standalone Electron-based Dis
 AddPackage --foreign waybar-cava               # Highly customizable Wayland bar for Sway and Wlroots based compositors, with module cava (Cross-platform Audio Visualizer)
 AddPackage --foreign yay                       # Yet another yogurt. Pacman wrapper and AUR helper written in go.
 AddPackage --foreign yay-debug                 # Detached debugging symbols for yay
-AddPackage --foreign codeberg-cli              # CLI Tool for Codeberg similar to gh and glab
 AddPackage --foreign gomodifytags              # Go tool to modify struct field tags
 AddPackage --foreign gore                      # Yet another Go REPL that works nicely
 AddPackage --foreign gotests                   # Golang commandline tool that generates table driven tests based on its target source files function and method signatures

@@ -94,4 +94,9 @@ echo ":: Applying aconfmgr..."
 mkdir -p $HOME/.config/aconfmgr
 aconfmgr apply
 
+echo ":: Initializing Doom Emacs..."
+cd $HOME
+$HOME/.emacs.d/bin/doom sync
+echo "You might want to run 'doom doctor' now to ensure Doom Emacs is healthy"
+
 echo "<=== Post-install complete! ===>"

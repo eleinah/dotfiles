@@ -1,4 +1,4 @@
-export GIT_EDITOR="nvim"
+export GIT_EDITOR="emacsclient -c -a 'emacs'"
 export ws="$HOME/workspace"
 export gh="$ws/github.com/eleinah"
 export dots="$gh/dotfiles"

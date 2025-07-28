@@ -53,7 +53,7 @@ swapon "$SWAP"
 
 echo ":: Downloading setup-chroot.sh..."
 mkdir -p /mnt/root
-curl -fsSL "https://codeberg.org/eleina/dotfiles/raw/branch/main/common/dot-config/scripts/arch/chroot-setup.sh" -o /mnt/root/chroot-setup.sh
+curl -fsSL "https://raw.githubusercontent.com/eleinah/dotfiles/refs/heads/main/common/dot-config/scripts/arch/chroot-setup.sh" -o /mnt/root/chroot-setup.sh
 chmod +x /mnt/root/chroot-setup.sh
 
 echo ":: Starting base install..."

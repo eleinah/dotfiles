@@ -42,11 +42,11 @@ echo "<=== Starting post-install deployment ===>"
 
 HOME="/home/ellie"
 
-if [ ! -d "$HOME/workspace/codeberg.org/eleina" ]; then
-	mkdir -p "$HOME/workspace/codeberg.org/eleina"
+if [ ! -d "$HOME/workspace/github.com/eleinah" ]; then
+	mkdir -p "$HOME/workspace/github.com/eleinah"
 fi
 
-GHWS="$HOME/workspace/codeberg.org/eleina"
+GHWS="$HOME/workspace/github.com/eleinah"
 
 echo ":: Checking network connectivity..."
 check_network
@@ -76,7 +76,7 @@ yay -S --noconfirm --needed aconfmgr-git
 echo ":: Cloning dotfiles repo..."
 cd "$GHWS"
 if [ ! -d "dotfiles" ]; then
-	git clone https://codeberg.org/eleina/dotfiles.git
+	git clone https://github.com/eleinah/dotfiles.git
 fi
 
 echo ":: Deploying dotfiles for $MACHINE_TYPE ..."

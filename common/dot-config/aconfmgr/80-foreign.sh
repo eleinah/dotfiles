@@ -17,3 +17,4 @@ AddPackage --foreign gomodifytags              # Go tool to modify struct field 
 AddPackage --foreign gore                      # Yet another Go REPL that works nicely
 AddPackage --foreign gotests                   # Golang commandline tool that generates table driven tests based on its target source files function and method signatures
 AddPackage --foreign scc                       # Sloc, Cloc and Code: a very fast accurate code counter with complexity calculations and COCOMO estimates written in pure Go
+AddPackage --foreign google-chrome             # The popular browser by Google

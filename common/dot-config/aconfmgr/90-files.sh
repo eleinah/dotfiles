@@ -256,3 +256,8 @@ CopyFile /usr/lib/ghc-9.4.8/lib/package.conf.d/yaml-0.11.11.2-EmOeXA0EbKy7yEQwIK
 CopyFile /usr/lib/ghc-9.4.8/lib/package.conf.d/zip-archive-0.4.3.2-7IcyhlU1nSQ6X2IF73hXi4.conf
 CopyFile /usr/lib/ghc-9.4.8/lib/package.conf.d/zlib-0.6.3.0-H3IC0Or0Xq79ax1pxpmaMo.conf
 CopyFile /usr/lib/gconv/gconv-modules.cache
+
+CopyFile /etc/texmf/ls-R
+CopyFile /etc/texmf/web2c/fmtutil.cnf
+CopyFile /etc/texmf/web2c/updmap.cfg
+CopyFile /usr/share/texmf-dist/ls-R

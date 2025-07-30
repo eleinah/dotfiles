@@ -33,4 +33,3 @@ AddPackage tree-sitter-python # Python grammar for tree-sitter
 AddPackage tree-sitter-rust   # Rust grammar for tree-sitter
 AddPackage ispell             # An interactive spell-checking program for Unix
 AddPackage pyright            # Type checker for the Python language
-AddPackage zig                # a low level, C like language with nice memory management features

@@ -1,0 +1,21 @@
+#!/bin/bash
+
+set -euo pipefail
+
+if [ -z "${gh:-}" ]; then
+    echo "Error!: 'dots' env var is not set. Check possible areas causing issue:"
+    echo "  - ~/.zprofile"
+    echo "  - ~/.zshrc"
+    echo "  - ~/.config/shell/vars"
+    exit 1
+fi
+
+cd "$gh"
+
+if [ ! -d "$gh/SLPL-SysAdmin" ]; then
+    git clone git@github.com:eleinah/SLPL-SysAdmin.git
+fi
+
+cd "SLPL-SysAdmin"
+
+rclone sync . gdrive:laptop/ --exclude ".git/**"

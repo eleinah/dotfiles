@@ -400,7 +400,7 @@
             "enabled": false
         },
         "RoleColorEverywhere": {
-            "enabled": true,
+            "enabled": false,
             "chatMentions": true,
             "memberList": true,
             "voiceUsers": true,
@@ -595,6 +595,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1753000752242
+        "settingsSyncVersion": 1753842742246
     }
 }

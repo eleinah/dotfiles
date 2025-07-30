@@ -78,3 +78,7 @@
 ;; This loads ox-pandoc whenever you go to export in Org mode
 (with-eval-after-load 'ox
   (require 'ox-pandoc))
+
+;; This makes vterm start zsh as a login shell
+(after! vterm
+  (setq vterm-shell "/bin/zsh -l"))

@@ -98,7 +98,8 @@
 (defun my/run-sync-gdrive ()
   "Run sync-gdrive non-interactively."
   (interactive)
-  (shell-command my/sync-gdrive-script))
+  (vterm "*sync-gdrive*")
+  (vterm-send-string (concat my/sync-gdrive-script "\n")))
 
 (map! :leader
       :desc "Sync dotfiles" "f C-s" #'my/run-sync-dots

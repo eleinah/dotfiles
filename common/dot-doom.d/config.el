@@ -82,3 +82,24 @@
 ;; This makes vterm start zsh as a login shell
 (after! vterm
   (setq vterm-shell "/bin/zsh -l"))
+
+;; Define custom func for running some Bash scripts
+(defvar my/sync-dots-script "~/.config/scripts/bash/sync-dots")
+(defvar my/sync-gdrive-script "~/.config/scripts/bash/sync-gdrive")
+
+(defun my/run-sync-dots ()
+  "Run sync-dots interactively in vterm."
+  (interactive)
+  (let* ((machine (completing-read "Machine type: " '("mainstation" "travelstation")))
+         (cmd (concat my/sync-dots-script " " machine "\n")))
+    (vterm "*sync-dots*")
+    (vterm-send-string cmd)))
+
+(defun my/run-sync-gdrive ()
+  "Run sync-gdrive non-interactively."
+  (interactive)
+  (shell-command my/sync-gdrive-script))
+
+(map! :leader
+      :desc "Sync dotfiles" "f C-s" #'my/run-sync-dots
+      :desc "Sync Google Drive" "f C-g" #'my/run-sync-gdrive)

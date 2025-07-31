@@ -82,3 +82,8 @@
 ;; This makes vterm start zsh as a login shell
 (after! vterm
   (setq vterm-shell "/bin/zsh -l"))
+
+;; Enable elcord-mode automatically
+(use-package! elcord
+  :config
+  (elcord-mode 1))

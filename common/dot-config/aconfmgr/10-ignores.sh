@@ -58,6 +58,8 @@ IgnorePath '/etc/snapper/**'
 IgnorePath '/etc/conf.d/snapper'
 IgnorePath '/usr/lib32/gconv/*'
 IgnorePath '/usr/share/glib-2.0/*'
+IgnorePath '/usr/lib32/*'
+IgnorePath '/usr/lib/*'
 
 # home stuff, just to be safe
 IgnorePath '/home/*'

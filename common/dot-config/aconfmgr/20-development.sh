@@ -32,5 +32,6 @@ AddPackage tree-sitter-bash   # Bash grammar for tree-sitter
 AddPackage tree-sitter-python # Python grammar for tree-sitter
 AddPackage tree-sitter-rust   # Rust grammar for tree-sitter
 AddPackage ispell             # An interactive spell-checking program for Unix
+AddPackage aspell             # A spell checker designed to eventually replace Ispell
 AddPackage pyright            # Type checker for the Python language
 AddPackage python-lsp-server  # An LSP server for Python

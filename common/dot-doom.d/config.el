@@ -104,3 +104,6 @@
 (map! :leader
       :desc "Sync dotfiles" "f C-s" #'my/run-sync-dots
       :desc "Sync Google Drive" "f C-g" #'my/run-sync-gdrive)
+
+;; Set agenda files
+(setq org-agenda-files (directory-files-recursively "~/org" "\\.org$"))

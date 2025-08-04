@@ -79,3 +79,6 @@ IgnorePath '/usr/share/mime/*'
 
 # Ignore Spotify
 IgnorePath '/opt/spotify/*'
+
+# Ignore some bin stuff
+IgnorePath '/usr/bin/**'

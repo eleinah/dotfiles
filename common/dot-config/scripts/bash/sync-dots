@@ -53,9 +53,11 @@ if [[ "$GIT_CONFIRM" =~ ^([yY]|[yY][eE][sS])$ ]]; then
 	REMOTE_GIT=$(git rev-parse @\{u\} 2>/dev/null)
 	BASE_GIT=$(git merge-base @ @\{u\} 2>/dev/null)
 
-	echo "LOCAL_GIT = $LOCAL_GIT"
-	echo "REMOTE_GIT = $REMOTE_GIT"
-	echo "BASE_GIT = $BASE_GIT"
+	if [ "${2:-}" = "-v" ] || [ "${2:-}" = "-V" ]; then
+		echo "LOCAL_GIT = $LOCAL_GIT"
+		echo "REMOTE_GIT = $REMOTE_GIT"
+		echo "BASE_GIT = $BASE_GIT"
+	fi
 
 	if [ -z "$LOCAL_GIT" ] || [ -z "$REMOTE_GIT" ] || [ -z "$BASE_GIT" ]; then
 		echo "Error: Could not determine Git hashes. Is the upstream set correctly?"

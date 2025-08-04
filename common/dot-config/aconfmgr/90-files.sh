@@ -26,3 +26,16 @@ CopyFile /etc/texmf/ls-R
 CopyFile /etc/texmf/web2c/fmtutil.cnf
 CopyFile /etc/texmf/web2c/updmap.cfg
 CopyFile /usr/share/texmf-dist/ls-R
+# Mon Aug  4 11:55:49 AM CDT 2025 - Extra files
+
+
+RemoveFile /usr/bin/vi
+RemoveFile /usr/bin/sass
+RemoveFile /usr/bin
+
+
+# Mon Aug  4 11:55:49 AM CDT 2025 - Extra file properties
+
+
+SetFileProperty /usr/bin/groupmems group ''
+SetFileProperty /usr/bin/groupmems mode ''

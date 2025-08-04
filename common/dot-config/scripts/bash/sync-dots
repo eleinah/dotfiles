@@ -53,7 +53,7 @@ if [[ "$GIT_CONFIRM" =~ ^([yY]|[yY][eE][sS])$ ]]; then
 	REMOTE_GIT=$(git rev-parse @\{u\} 2>/dev/null)
 	BASE_GIT=$(git merge-base @ @\{u\} 2>/dev/null)
 
-	if [ "${2:-}" = "-v" ] || [ "${2:-}" = "-V" ]; then
+	if [[ "${2:-}" =~ ^(-[vV])$ ]]; then
 		echo "LOCAL_GIT = $LOCAL_GIT"
 		echo "REMOTE_GIT = $REMOTE_GIT"
 		echo "BASE_GIT = $BASE_GIT"
@@ -97,7 +97,7 @@ if [[ "$GIT_CONFIRM" =~ ^([yY]|[yY][eE][sS])$ ]]; then
 	fi
 fi
 
-if [ "${2:-}" = "-v" ] || [ "${2:-}" = "-V" ]; then
+if [[ "${2:-}" =~ ^(-[vV])$ ]]; then
 	stow -v -t "$HOME" -R common --dotfiles --adopt
 	stow -v -t "$HOME" -R "$MACHINE_TYPE" --dotfiles --adopt
 else

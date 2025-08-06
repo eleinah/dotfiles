@@ -26,3 +26,6 @@ AddPackage texlive-plaingeneric     # TeX Live - Plain (La)TeX packages
 AddPackage texlive-pstricks         # TeX Live - PSTricks
 AddPackage texlive-publishers       # TeX Live - Publisher styles, theses, etc.
 AddPackage texlive-xetex            # TeX Live - XeTeX and packages
+AddPackage reapack                  # Package manager for the Reaper DAW
+AddPackage reaper                   # A complete digital audio production application for computers
+AddPackage sws                      # A collection of features that seamlessly integrate into REAPER

@@ -36,3 +36,4 @@ AddPackage aspell             # A spell checker designed to eventually replace I
 AddPackage aspell-en          # English dictionary for aspell
 AddPackage pyright            # Type checker for the Python language
 AddPackage python-lsp-server  # An LSP server for Python
+AddPackage github-cli         # The GitHub CLI

@@ -51,3 +51,4 @@
 (package! catppuccin-theme)
 (package! tldr)
 (package! ox-pandoc)
+(package! elcord)

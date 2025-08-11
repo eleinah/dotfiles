@@ -75,6 +75,9 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 
+;; Globally toggle relative line numbers by default
+(setq display-line-numbers-type 'relative)
+
 ;; This loads ox-pandoc whenever you go to export in Org mode
 (with-eval-after-load 'ox
   (require 'ox-pandoc))

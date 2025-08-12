@@ -6,7 +6,7 @@
 	helper = !/usr/bin/gh auth git-credential
 [user]
 	email = eleina@member.fsf.org
-	name = Ellie
+	name = Eleina Hayden
 	signingkey = 814A355856D8FACA
 [credential]
 	helper = manager-core

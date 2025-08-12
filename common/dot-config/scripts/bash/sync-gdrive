@@ -3,7 +3,7 @@
 set -euo pipefail
 
 if [ -z "${gh:-}" ]; then
-    echo "Error!: 'dots' env var is not set. Check possible areas causing issue:"
+    echo "Error!: 'gh' env var is not set. Check possible areas causing issue:"
     echo "  - ~/.zprofile"
     echo "  - ~/.zshrc"
     echo "  - ~/.config/shell/vars"

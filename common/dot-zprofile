@@ -44,7 +44,7 @@ export PATH="$GOBIN:$PATH"
 
 export FZF_DEFAULT_OPTS="--style minimal --color 16 --layout=reverse --height 30% --preview='bat -p --color=always {}'"
 export FZF_CTRL_R_OPTS="--style minimal --color 16 --info inline --no-sort --no-preview" # separate opts for history widget
-export MANPAGER="less -R --use-color -Dd+r -Du+b" # colored man pages
+export MANPAGER="less -R --use-color -Dd+r -Du+b"                                        # colored man pages
 
 # colored less + termcap vars
 export LESS="R --use-color -Dd+r -Du+b"
@@ -61,10 +61,13 @@ export SDL_VIDEODRIVER=wayland
 export _JAVA_AWT_WM_NONREPARENTING=1
 export QT_QPA_PLATFORM=wayland
 
-# for GPG passphrase in terminal
+# for GPG
+unset SSH_AGENT_PID
+export SSH_AUTH_SOCK="${XDG_RUNTIME_DIR}/gnupg/S.gpg-agent.ssh"
 export GPG_TTY=$(tty)
+gpg-connect-agent updatestartuptty /bye >/dev/null
 
 # Start Sway
 if [[ -z "$WAYLAND_DISPLAY" && -n "$XDG_VTNR" && "$XDG_VTNR" -eq 1 ]]; then
-	exec sway
+    exec sway
 fi

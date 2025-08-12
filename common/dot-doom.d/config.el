@@ -89,6 +89,8 @@
 ;; Define custom func for running some Bash scripts
 (defvar my/sync-dots-script "~/.config/scripts/bash/sync-dots")
 (defvar my/sync-gdrive-script "~/.config/scripts/bash/sync-gdrive")
+;; (defvar my/encrypt-org-journal-script "~/.config/scripts/bash/encrypt-org-journal")
+;; (defvar my/decrypt-org-journal-script "~/.config/scripts/bash/decrypt-org-journal")
 
 (defun my/run-sync-dots ()
   "Run sync-dots interactively in vterm."
@@ -99,10 +101,22 @@
     (vterm-send-string cmd)))
 
 (defun my/run-sync-gdrive ()
-  "Run sync-gdrive non-interactively."
+  "Run sync-gdrive interactively in vterm."
   (interactive)
   (vterm "*sync-gdrive*")
   (vterm-send-string (concat my/sync-gdrive-script "\n")))
+
+;; (defun my/run-encrypt-org-journal ()
+;;   "Run encrypt-org-journal interactively in vterm."
+;;   (interactive)
+;;   (vterm "*encrypt-org-journal*")
+;;   (vterm-send-string (concat my/encrypt-org-journal-script "\n")))
+
+;; (defun my/run-decrypt-org-journal ()
+;;   "Run decrypt-org-journal interactively in vterm."
+;;   (interactive)
+;;   (vterm "*decrypt-org-journal*")
+;;   (vterm-send-string (concat my/decrypt-org-journal-script "\n")))
 
 (map! :leader
       :desc "Sync dotfiles" "f C-s" #'my/run-sync-dots
@@ -110,3 +124,9 @@
 
 ;; Set agenda files
 (setq org-agenda-files (directory-files-recursively "~/org" "\\.org$"))
+
+;; GPG stuff
+;;;; This is for Org mode
+(require 'org-crypt)
+(org-crypt-use-before-save-magic)
+(setq org-tags-exclude-from-inheritance (quote ("crypt")))

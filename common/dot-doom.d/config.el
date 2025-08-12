@@ -133,6 +133,6 @@
 (let ((hostname (system-name)))
   (setq org-crypt-key
         (cond
-         ((string-equal hostname "mainstation") "7602CBAF2CAE9A43,814A355856D8FACA")
-         ((string-equal hostname "travelstation") "814A355856D8FACA,7602CBAF2CAE9A43")
+         ((string-equal hostname "mainstation") "7602CBAF2CAE9A43")
+         ((string-equal hostname "travelstation") "814A355856D8FACA")
          (t nil))))

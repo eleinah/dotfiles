@@ -1,5 +1,16 @@
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[user]
+	email = eleina@member.fsf.org
+	name = Eleina Hayden
+	signingkey = 814A355856D8FACA
+[credential]
+	helper = manager-core
 [init]
 	defaultBranch = main
-[user]
-	name = Eleina Hayden
-	email = eleina@member.fsf.org
+[commit]
+	gpgsign = true

@@ -1,0 +1,29 @@
+#+title: Mosyle Notes
+
+* Setting up an iPad from scratch:
+1. Ensure the device is in ABM (should be since we purchase directly from Apple)
+2. Ensure that the MDM is set to Mosyle on the device
+3. Turn on the iPad
+4. Proceed through the messages
+5. When it asks if you want to set up with another device, choose no. Set up separately.
+6. This should prompt to enroll into the MDM (Mosyle), press Enroll Now
+
+* Setting up VPP in Mosyle (requires content token from ABM) :crypt:
+-----BEGIN PGP MESSAGE-----
+
+hF4DLRBR2po9sCYSAQdATdmwZANeVAQE2Y/9XrNB/RiiRkv30SnbOMFHFvOjxzIw
+rg87S5jwu1I8rlo7636x372eC+TjYtxEcz0pixA2OdBbBvtpSvpvKL9q4Fk5dhVe
+0ukBrFmTMRUbXAJQanK2AlO+6dcWIS7GUizzHa2Tdez1uK361FKfiE3H9u4ISKRV
+sEszR6141c9kysV9zv6JmTpL60hSuOLFPs682YTrsnAV/EqAFC10mPuOgSZxTW3c
+H6cX/G201Lj6wi9r7LW3x+CpclO8RLG3NHJ9hJKHWTtd1l8h7x8Eas9lXnpdlat9
+v1PDanMsBtr5ZGW8jeTu5DINGk9YKAErY/wjXS3GJIHL+zPv3HqmdZgajo9z3WY1
+2UwFZQ7LSmGr8l59MpYeNszK1/ybgi4EhVu8naxEfQydW07PoTK8a3YJE8iPSVRy
+2JgcvdSjCXzDVDDqypNA5W/x21nrJZ63DBY2a3VMYiLMmXnCrqwHWrQLrklE9L/F
+fvZGmfeL7rsCB9aRTD1LKP2RxH0FNxHnp9UktfbI4uzoqGkioy/ZUwN12024dqeM
+7+j/siJSOuxUyf4U7CHDGS/2flZGTnBGndW0QSg2NxO7/rbB+gl5BYZmXvLfm7NQ
+BoYCvl/BPKby2wQSyM2dD8qOxW1rkrJQuyPaS+EGGI0nH4kfVAfcQ4F5UDJ3IZtZ
+hgqhpC5rfqJIiNXsTFNPX4+1WLZ+QbvgsOPa7WUArAMgkLAAGQHb/hI5/AGEwW8m
+otr53SJKsY9H1Lv4JNlI41lGxAXU+hrB1pksKVKAW6nEChsmPuqxuwLYuJ21PMSr
+wAjxTYIlABZk/MaFVfo=
+=okhL
+-----END PGP MESSAGE-----

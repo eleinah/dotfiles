@@ -5,6 +5,5 @@ AddPackage power-profiles-daemon                   # laptop power saving modes
 AddPackage dhcpcd                                  # for DHCP resolution
 AddPackage iwd                                     # for Wi-Fi capabilities
 AddPackage --foreign globalprotect-openconnect-git # A GUI for GlobalProtect VPN, based on OpenConnect, supports the SSO authentication method.
-AddPackage --foreign google-chrome                 # The popular browser by Google
 
 CreateDir /etc/iwd # for Wi-Fi capabilities

@@ -109,10 +109,10 @@
 ;;   (vterm-send-string (concat my/decrypt-org-journal-script "\n")))
 
 (map! :leader
-      :desc "Sync dotfiles" "f C-s" #'my/run-sync-dots
+      :desc "Sync dotfiles" "f C-s" #'my/run-sync-dots)
 
-      ;; Set agenda files
-      (setq org-agenda-files (directory-files-recursively "~/org" "\\.org$")))
+;; Set agenda files for work
+(setq org-agenda-files (directory-files-recursively "~/org/work" "\\.org$"))
 
 ;; GPG stuff
 ;; ---------

@@ -1,0 +1,20 @@
+#!/bin/bash
+
+set -euo pipefail
+
+if [ -z "${dots:-}" ]; then
+    echo "Error!: 'dots' env var is not set. Check possible areas causing issue:"
+    echo "  - ~/.zprofile"
+    echo "  - ~/.zshrc"
+    echo "  - ~/.config/shell/vars"
+    exit 1
+fi
+
+if [ ! -e "$dots/common/org/journal.org.gpg" ]; then
+    echo "Error!: 'journal.org.gpg' does not exist."
+    exit 1
+fi
+
+gpg -d --output "$HOME"/org/journal.org "$dots"/common/org/journal.org.gpg
+
+echo "Journal decrypted and placed in $HOME/org"

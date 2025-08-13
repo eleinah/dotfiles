@@ -112,7 +112,11 @@
       :desc "Sync dotfiles" "f C-s" #'my/run-sync-dots)
 
 ;; Set agenda files for work
-(setq org-agenda-files (directory-files-recursively "~/org/work" "\\.org$"))
+(let ((hostname (system-name)))
+  (setq org-agenda-files
+        (cond
+         ((string-equal hostname "travelstation") (directory-files-recursively "~/org/work" "\\.org$"))
+         (t nil))))
 
 ;; GPG stuff
 ;; ---------

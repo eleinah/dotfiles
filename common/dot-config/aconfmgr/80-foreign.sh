@@ -18,3 +18,4 @@ AddPackage --foreign gotests                    # Golang commandline tool that g
 AddPackage --foreign scc                        # Sloc, Cloc and Code: a very fast accurate code counter with complexity calculations and COCOMO estimates written in pure Go
 AddPackage --foreign powershell-bin             # A cross-platform automation and configuration tool/framework (binary package)
 AddPackage --foreign powershell-editor-services # A common platform for PowerShell development support in any editor or application
+AddPackage --foreign runelite                   # Open source Old School RuneScape client.

@@ -17,6 +17,7 @@ AddPackage shellcheck         # Shell script analysis tool
 AddPackage pandoc-cli         # Conversion between documentation formats
 AddPackage cmake              # A cross-platform open-source make system
 AddPackage docker             # Pack, ship and run any application as a lightweight container
+AddPackage docker-compose     # Fast, isolated development environments using Docker
 AddPackage gopls              # Language server for Go programming language
 AddPackage python-black       # Uncompromising Python code formatter
 AddPackage python-isort       # A Python utility / library to sort Python imports

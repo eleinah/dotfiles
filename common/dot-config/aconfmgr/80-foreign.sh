@@ -19,3 +19,4 @@ AddPackage --foreign scc                        # Sloc, Cloc and Code: a very fa
 AddPackage --foreign powershell-bin             # A cross-platform automation and configuration tool/framework (binary package)
 AddPackage --foreign powershell-editor-services # A common platform for PowerShell development support in any editor or application
 AddPackage --foreign runelite                   # Open source Old School RuneScape client.
+AddPackage --foreign bolt-launcher              # Free open-source third-party implementation of the Jagex Launcher

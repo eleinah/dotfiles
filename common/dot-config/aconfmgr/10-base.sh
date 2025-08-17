@@ -49,3 +49,4 @@ AddPackage polkit
 AddPackage bottom    # A graphical process/system monitor
 AddPackage unzip     # For extracting and viewing files in .zip archives
 AddPackage reflector # A Python 3 module and script to retrieve and filter the latest Pacman mirror list.
+AddPackage pipewire-alsa # Low-latency audio/video router and processor - ALSA configuration

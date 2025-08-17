@@ -1,0 +1,3 @@
+[submodule "common/dot-emacs.d"]
+	path = common/dot-emacs.d
+	url = https://github.com/doomemacs/doomemacs.git

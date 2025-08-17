@@ -583,6 +583,9 @@
         },
         "WebContextMenus": {
             "enabled": true
+        },
+        "CopyStickerLinks": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -595,6 +598,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1753842742246
+        "settingsSyncVersion": 1755308417557
     }
 }

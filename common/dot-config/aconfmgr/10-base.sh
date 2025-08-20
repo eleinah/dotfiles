@@ -46,7 +46,8 @@ AddPackage less                   # A terminal based program for viewing text fi
 AddPackage ripgrep                # A search tool that combines the usability of ag with the raw speed of grep
 AddPackage stow                   # Manage installation of multiple softwares in the same directory tree
 AddPackage polkit
-AddPackage bottom    # A graphical process/system monitor
-AddPackage unzip     # For extracting and viewing files in .zip archives
-AddPackage reflector # A Python 3 module and script to retrieve and filter the latest Pacman mirror list.
+AddPackage bottom        # A graphical process/system monitor
+AddPackage unzip         # For extracting and viewing files in .zip archives
+AddPackage reflector     # A Python 3 module and script to retrieve and filter the latest Pacman mirror list.
 AddPackage pipewire-alsa # Low-latency audio/video router and processor - ALSA configuration
+AddPackage dictd         # Online dictionary client and server

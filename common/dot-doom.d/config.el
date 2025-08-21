@@ -85,8 +85,7 @@
 
 ;; Define custom func for running some Bash scripts
 (defvar my/sync-dots-script "~/.config/scripts/bash/sync-dots")
-;; (defvar my/encrypt-org-journal-script "~/.config/scripts/bash/encrypt-org-journal")
-;; (defvar my/decrypt-org-journal-script "~/.config/scripts/bash/decrypt-org-journal")
+(defvar my/sync-gdrive-script "~/.config/scripts/bash/sync-gdrive")
 
 (defun my/run-sync-dots ()
   "Run sync-dots interactively in vterm."
@@ -96,20 +95,16 @@
     (vterm "*sync-dots*")
     (vterm-send-string cmd)))
 
-;; (defun my/run-encrypt-org-journal ()
-;;   "Run encrypt-org-journal interactively in vterm."
-;;   (interactive)
-;;   (vterm "*encrypt-org-journal*")
-;;   (vterm-send-string (concat my/encrypt-org-journal-script "\n")))
-
-;; (defun my/run-decrypt-org-journal ()
-;;   "Run decrypt-org-journal interactively in vterm."
-;;   (interactive)
-;;   (vterm "*decrypt-org-journal*")
-;;   (vterm-send-string (concat my/decrypt-org-journal-script "\n")))
+(defun my/run-sync-gdrive ()
+  (interactive)
+  (let* ((cmd (concat my/sync-gdrive-script "\n")))
+    (vterm "*sync-gdrive*")
+    (vterm-send-string cmd)))
 
 (map! :leader
       :desc "Sync dotfiles" "f C-s" #'my/run-sync-dots)
+(map! :leader
+      :desc "Sync Google Drive" "f C-g" #'my/run-sync-gdrive)
 
 ;; Set agenda files for work
 (let ((hostname (system-name)))

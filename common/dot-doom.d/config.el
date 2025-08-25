@@ -117,7 +117,7 @@
 ;; ---------
 ;; This is for Org mode
 (require 'org-crypt)
-(org-crypt-use-before-save-magic)
+;; (org-crypt-use-before-save-magic)
 (setq org-tags-exclude-from-inheritance (quote ("crypt")))
 (let ((hostname (system-name)))
   (setq org-crypt-key
@@ -125,3 +125,8 @@
          ((string-equal hostname "mainstation") "7602CBAF2CAE9A43")
          ((string-equal hostname "travelstation") "814A355856D8FACA")
          (t nil))))
+
+;; General GPG/epa-file stuff
+(require 'epa-file)
+(epa-file-enable)
+(setq epa-file-encrypt-to '("7602CBAF2CAE9A43" "814A355856D8FACA"))

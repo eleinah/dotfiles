@@ -113,6 +113,13 @@
          ((string-equal hostname "travelstation") (directory-files-recursively "~/org/work" "\\.org$"))
          (t nil))))
 
+;; More Org file stuff
+(after! org
+  (add-to-list 'org-capture-templates
+               '("J" "Secret Journal" entry
+                 (file+olp+datetree "~/org/journal.org.gpg")
+                 "* %U %?\n%i\n%a" :prepend t)))
+
 ;; GPG stuff
 ;; ---------
 ;; This is for Org mode

@@ -124,7 +124,7 @@
 ;; ---------
 ;; This is for Org mode
 (require 'org-crypt)
-;; (org-crypt-use-before-save-magic)
+(org-crypt-use-before-save-magic)
 (setq org-tags-exclude-from-inheritance (quote ("crypt")))
 (let ((hostname (system-name)))
   (setq org-crypt-key

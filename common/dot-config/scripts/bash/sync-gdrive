@@ -16,7 +16,7 @@ if [ ! -d "$dots" ]; then
 fi
 
 # TODO: Add conversions to .docx and .pdf to sync to gdrive
-cd "$dots/travelstation/org/work"
+cd "$dots/travelstation/org/work/export"
 
 rclone sync . gdrive:laptop/ --exclude ".git/**"
 

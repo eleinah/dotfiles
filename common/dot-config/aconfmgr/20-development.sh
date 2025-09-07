@@ -39,3 +39,4 @@ AddPackage pyright            # Type checker for the Python language
 AddPackage python-lsp-server  # An LSP server for Python
 AddPackage github-cli         # The GitHub CLI
 AddPackage jre-openjdk        # OpenJDK Java 24 full runtime environment
+AddPackage postgresql # Sophisticated object-relational DBMS

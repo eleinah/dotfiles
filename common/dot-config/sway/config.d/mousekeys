@@ -1,0 +1,37 @@
+mode "mousekeys" {
+    # use the keycodes from /usr/share/X11/xkb/keycodes/keypad and verify with wev
+    # mirror the motions in https://en.wikipedia.org/wiki/Mouse_keys#Layout
+
+    # movement
+    bindsym KP_Up seat - cursor move 0 -10
+    bindsym KP_Down seat - cursor move 0 +10
+    bindsym KP_Left seat - cursor move -10 0
+    bindsym KP_Right seat - cursor move +10 0
+
+    bindsym KP_Home seat - cursor move -10 -10
+    bindsym KP_Next seat - cursor move +10 +10
+    bindsym KP_Prior seat - cursor move +10 -10
+    bindsym KP_End seat - cursor move -10 +10
+
+    # actions - (double click), drag and drop
+    # keys: / left (button1), * middle (button2), - right (button3)
+    # motions: 5 click (press & release), + double click (press press release), 0 drag (press only), . drop (release only)
+    # NOTE: these are a bit messier in the sense that they also emit output, which is suboptimal, but someone can probably tell me how to fix that (or tell me that it isn't possible to do so)
+    bindsym KP_Divide+KP_Begin exec 'swaymsg seat - cursor press button1 && swaymsg seat - cursor release button1'
+    bindsym KP_Divide+KP_Add exec 'swaymsg seat - cursor press button1 && swaymsg seat - cursor press button1 && swaymsg seat - cursor release button1'
+    bindsym KP_Divide+KP_Insert seat - cursor press button1
+    bindsym KP_Divide+KP_Delete seat - cursor release button1
+    bindsym KP_Multiply+KP_Begin exec 'swaymsg seat - cursor press button2 && swaymsg seat - cursor release button2'
+    bindsym KP_Multiply+KP_Add exec 'swaymsg seat - cursor press button2 && swaymsg seat - cursor press button2 && swaymsg seat - cursor release button2'
+    bindsym KP_Multiply+KP_Insert seat - cursor press button2
+    bindsym KP_Multiply+KP_Delete seat - cursor release button2
+    bindsym KP_Subtract+KP_Begin exec 'swaymsg seat - cursor press button3 && swaymsg seat - cursor release button3'
+    bindsym KP_Subtract+KP_Add exec 'swaymsg seat - cursor press button3 && swaymsg seat - cursor press button3 && swaymsg seat - cursor release button3'
+    bindsym KP_Subtract+KP_Insert seat - cursor press button3
+    bindsym KP_Subtract+KP_Delete seat - cursor release button3
+
+    # leave mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+m mode "mousekeys"

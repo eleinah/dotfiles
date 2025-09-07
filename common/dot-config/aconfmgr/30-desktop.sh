@@ -3,7 +3,7 @@ AddPackage autotiling    # Script for sway and i3 to automatically switch the ho
 AddPackage grim          # Screenshot utility for Wayland
 AddPackage grub          # GNU GRand Unified Bootloader (2)
 AddPackage mako          # Lightweight notification daemon for Wayland
-AddPackage rofi-wayland  # A window switcher, run dialog and dmenu replacement - fork with wayland support
+AddPackage rofi # A window switcher, application launcher and dmenu replacement
 AddPackage slurp         # Select a region in a Wayland compositor
 AddPackage steam         # Valve's digital software delivery system
 AddPackage sway          # Tiling Wayland compositor and replacement for the i3 window manager

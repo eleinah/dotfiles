@@ -29,3 +29,5 @@ AddPackage texlive-xetex            # TeX Live - XeTeX and packages
 AddPackage reapack                  # Package manager for the Reaper DAW
 AddPackage reaper                   # A complete digital audio production application for computers
 AddPackage sws                      # A collection of features that seamlessly integrate into REAPER
+AddPackage vlc           # Multi-platform MPEG, VCD/DVD, and DivX player
+AddPackage vlc-plugins-all          # Free and open source cross-platform multimedia player and framework - all plugins

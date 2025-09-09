@@ -10,7 +10,6 @@ AddPackage sway          # Tiling Wayland compositor and replacement for the i3 
 AddPackage swaybg        # Wallpaper tool for Wayland compositors
 AddPackage swayidle      # Idle management daemon for Wayland
 AddPackage thunar        # Modern, fast and easy-to-use file manager for Xfce
-AddPackage vlc           # Multi-platform MPEG, VCD/DVD, and DivX player
 AddPackage wl-clipboard  # Command-line copy/paste utilities for Wayland
 AddPackage wmenu         # Efficient dynamic menu for Wayland and wlroots based Wayland compositors
 AddPackage xorg-xwayland # run X clients under wayland

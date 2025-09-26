@@ -1,6 +1,5 @@
 # Foreign (AUR) packages
 AddPackage --foreign aconfmgr-git               # A configuration manager for Arch Linux
-AddPackage --foreign flameshot-git              # Powerful yet simple to use screenshot software
 AddPackage --foreign jetbrains-toolbox          # Manage all your JetBrains Projects and Tools
 AddPackage --foreign license                    # A tool to easily add a license to your project
 AddPackage --foreign otf-departure-mono         # a monospaced pixel font with a lo-fi technical vibe

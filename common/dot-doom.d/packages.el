@@ -52,3 +52,4 @@
 (package! tldr)
 (package! ox-pandoc)
 (package! elcord)
+(package! tidal)

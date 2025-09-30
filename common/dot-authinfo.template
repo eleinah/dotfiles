@@ -1,1 +1,1 @@
-machine api.github.com login eleinah password <GITHUB_TOKEN_HERE>
+machine api.github.com login eleinah^forge password <GITHUB_TOKEN_HERE>

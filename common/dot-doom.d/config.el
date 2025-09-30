@@ -138,5 +138,8 @@
 (epa-file-enable)
 (setq epa-file-encrypt-to '("7602CBAF2CAE9A43" "814A355856D8FACA"))
 
+;; authinfo for Magit Forge
+(setq auth-sources '("~/.authinfo"))
+
 ;; Tidal (Cycles) stuff for live-coding algorithmic music
 (setq tidal-boot-script-path "~/.cabal/share/x86_64-osx-ghc-8.8.4/tidal-1.7.4/BootTidal.hs")

@@ -39,6 +39,7 @@ AddPackage xdg-desktop-portal-wlr # xdg-desktop-portal backend for wlroots
 AddPackage xterm                  # X Terminal Emulator
 AddPackage bat                    # Cat clone with syntax highlighting and git integration
 AddPackage curl                   # command line tool and library for transferring data with URLs
+AddPackage wget # Network utility to retrieve files from the web
 AddPackage fd                     # Simple, fast and user-friendly alternative to find
 AddPackage fzf                    # Command-line fuzzy finder
 AddPackage grep                   # A string search utility

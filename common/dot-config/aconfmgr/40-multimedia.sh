@@ -33,4 +33,3 @@ AddPackage vlc           # Multi-platform MPEG, VCD/DVD, and DivX player
 AddPackage vlc-plugins-all          # Free and open source cross-platform multimedia player and framework - all plugins
 AddPackage flameshot # Powerful yet simple to use screenshot software
 AddPackage opus-tools # Collection of tools for Opus audio codec
-AddPackage yt-dlp # A youtube-dl fork with additional features and fixes

@@ -1,5 +1,1 @@
 Match host * exec "gpg-connect-agent UPDATESTARTUPTTY /bye"
-
-Host media
-	HostName 192.168.69.123
-	User media

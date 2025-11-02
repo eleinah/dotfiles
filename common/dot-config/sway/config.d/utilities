@@ -11,4 +11,4 @@
     # Special key to take a screenshot with grim
     ## bindsym Print exec 'grim -g "$(slurp)" /home/ellie/Pictures/Screenshots/$(date +"screenshot_%Y-%m-%d-%H%M%S.png")'
     # Special key to take a screenshot with flameshot
-    bindsym Print exec 'flameshot gui'
+    bindsym Print exec 'hyprshot -m region'

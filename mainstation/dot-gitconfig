@@ -7,7 +7,7 @@
 [user]
 	email = eleina@member.fsf.org
 	name = Eleina Hayden
-	signingkey = 7602CBAF2CAE9A43
+	signingkey = C232E4730F1EEBDB
 [credential]
 	helper = manager-core
 [init]

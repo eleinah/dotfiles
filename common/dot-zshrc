@@ -1,10 +1,6 @@
 # main zsh settings. env in ~/.zprofile
 # read second
 
-if [[ -n "$TRAMP"  ]]; then
-   return
-fi
-
 # source global shell alias & variables files
 [ -f "$XDG_CONFIG_HOME/shell/alias" ] && source "$XDG_CONFIG_HOME/shell/alias"
 [ -f "$XDG_CONFIG_HOME/shell/vars" ] && source "$XDG_CONFIG_HOME/shell/vars"

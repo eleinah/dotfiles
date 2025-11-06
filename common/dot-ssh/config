@@ -1,1 +1,12 @@
 Match host * exec "gpg-connect-agent UPDATESTARTUPTTY /bye"
+
+Host mainstation
+    Hostname 10.3.10.3
+    User ellie
+    IdentityAgent /run/user/1000/gnupg/S.gpg-agent.ssh
+    ForwardAgent yes
+Host rave
+    Hostname 10.2.10.3
+    User root
+    IdentityAgent /run/user/1000/gnupg/S.gpg-agent.ssh
+    ForwardAgent yes

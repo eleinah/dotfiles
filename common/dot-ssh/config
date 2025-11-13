@@ -14,4 +14,4 @@ Host rave2
     Hostname 10.4.10.3
     User root
     IdentityAgent /run/user/1000/gnupg/S.gpg-agent.ssh
-    FowardAgent yes
+    ForwardAgent yes

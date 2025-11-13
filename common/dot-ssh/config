@@ -6,109 +6,131 @@ Host list
     User wishlist
     IdentityAgent /run/user/1000/gnupg/S.gpg-agent.ssh
     ForwardAgent yes
+    RequestTTY yes
 Host jumper
     Hostname 10.4.10.12
     Port 22
     User wishlist
     IdentityAgent /run/user/1000/gnupg/S.gpg-agent.ssh
     ForwardAgent yes
+    RequestTTY yes
 Host rave
     Hostname 10.2.10.3
     User root
     ProxyJump jumper
     ForwardAgent yes
+    RequestTTY yes
 Host rave2
     Hostname 10.4.10.3
     User root
     ProxyJump jumper
     ForwardAgent yes
+    RequestTTY yes
 Host mainstation
     Hostname 10.3.10.3
     User ellie
     ProxyJump jumper
     ForwardAgent yes
+    RequestTTY yes
 Host qbittorrent
     Hostname 10.2.10.4
     User root
     ProxyJump jumper
     ForwardAgent yes
+    RequestTTY yes
 Host prowlarr
     Hostname 10.2.10.5
     User root
     ProxyJump jumper
     ForwardAgent yes
+    RequestTTY yes
 Host radarr
     Hostname 10.2.10.6
     User root
     ProxyJump jumper
     ForwardAgent yes
+    RequestTTY yes
 Host sonarr
     Hostname 10.2.10.7
     User root
     ProxyJump jumper
     ForwardAgent yes
+    RequestTTY yes
 Host jellyseerr
     Hostname 10.2.10.8
     User root
     ProxyJump jumper
     ForwardAgent yes
+    RequestTTY yes
 Host wizarr
     Hostname 10.2.10.9
     User root
     ProxyJump jumper
     ForwardAgent yes
+    RequestTTY yes
 Host jellyfin
     Hostname 10.2.10.10
     User root
     ProxyJump jumper
     ForwardAgent yes
+    RequestTTY yes
 Host unpackerr
     Hostname 10.2.10.11
     User root
     ProxyJump jumper
     ForwardAgent yes
+    RequestTTY yes
 Host ptero
     Hostname 10.2.10.12
     User root
     ProxyJump jumper
     ForwardAgent yes
+    RequestTTY yes
 Host wings
     Hostname 10.2.10.13
     User root
     ProxyJump jumper
     ForwardAgent yes
+    RequestTTY yes
 Host adguard
     Hostname 10.4.10.5
     User root
     ProxyJump jumper
     ForwardAgent yes
+    RequestTTY yes
 Host cloudflared
     Hostname 10.4.10.6
     User root
     ProxyJump jumper
     ForwardAgent yes
+    RequestTTY yes
 Host it-tools
     Hostname 10.4.10.7
     User root
     ProxyJump jumper
     ForwardAgent yes
+    RequestTTY yes
 Host bytestash
     Hostname 10.4.10.8
     User root
     ProxyJump jumper
     ForwardAgent yes
+    RequestTTY yes
 Host vaultwarden
     Hostname 10.4.10.9
     User root
     ProxyJump jumper
     ForwardAgent yes
+    RequestTTY yes
 Host bunkerweb
     Hostname 10.4.10.10
     User root
     ProxyJump jumper
     ForwardAgent yes
+    RequestTTY yes
 Host caddy
     Hostname 10.4.10.11
     User root
     ProxyJump jumper
     ForwardAgent yes
+    RequestTTY yes

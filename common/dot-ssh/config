@@ -24,7 +24,7 @@ Host rave2
     ForwardAgent yes
 Host mainstation
     Hostname 10.3.10.3
-    User root
+    User ellie
     ProxyJump jumper
     ForwardAgent yes
 Host qbittorrent

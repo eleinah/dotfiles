@@ -6,3 +6,4 @@ common/dot-config/vesktop/SingletonLock
 common/dot-config/vesktop/state.json
 common/dot-config/simple-update-notifier/electron-builder.json
 common/dot-config/vesktop/settings.json
+common/dot-config/Thunar/accels.scm

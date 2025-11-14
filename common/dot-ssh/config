@@ -149,4 +149,9 @@ Host caddy
     RequestTTY yes
     SetEnv TERM=xterm-256color
 Host chirpy
-    Hostname
+    Hostname chirpy.lly.local
+    User chirpy
+    ProxyJump list:22
+    ForwardAgent yes
+    RequestTTY yes
+    SetEnv TERM=xterm-256color

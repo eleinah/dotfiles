@@ -45,11 +45,6 @@ window#waybar {
     border-radius: 4px;
 }
 
-#custom-weather {
-    padding: 0 10px;
-    color: #89b4fa; /* blue */
-}
-
 #pulseaudio, #pulseaudio#microphone, #pulseaudio.microphone {
     padding: 0 10px;
     color: #a6e3a1; /* green */

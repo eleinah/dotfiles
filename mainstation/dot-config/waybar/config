@@ -4,7 +4,6 @@
   "height": 0,
 
   "modules-left": [
-    "custom/weather",
     "sway/workspaces",
     "sway/mode",
     "sway/scratchpad"
@@ -29,7 +28,7 @@
   ],
 
   "sway/scratchpad": {
-      "format": "",
+      "format": "S",
       "disable-scroll": true,
       "warp-on-scroll": false
   },

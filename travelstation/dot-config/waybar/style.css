@@ -45,29 +45,6 @@ window#waybar {
     border-radius: 4px;
 }
 
-#custom-weather {
-    padding: 0 10px;
-    color: #89b4fa; /* blue */
-}
-
-#custom-playerctl {
-    padding: 0 10px;
-    color: #a6e3a1; /* green */
-    background: transparent;
-    font-weight: 500;
-    transition: color 0.2s, background 0.2s;
-}
-
-#custom-playerctl.Playing {
-    color: #f9e2af;      /* yellow */
-    background: #313244; /* surface0 */
-}
-
-#custom-playerctl.Paused {
-    color: #585b70;      /* overlay1 */
-    background: transparent;
-}
-
 #pulseaudio, #pulseaudio#microphone, #pulseaudio.microphone {
     padding: 0 10px;
     color: #a6e3a1; /* green */

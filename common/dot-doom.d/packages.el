@@ -53,3 +53,4 @@
 (package! ox-pandoc)
 (package! elcord)
 (package! tidal)
+(package! d2-mode)

@@ -126,20 +126,30 @@
 (require 'org-crypt)
 (org-crypt-use-before-save-magic)
 (setq org-tags-exclude-from-inheritance (quote ("crypt")))
-(let ((hostname (system-name)))
-  (setq org-crypt-key
-        (cond
-         ((string-equal hostname "mainstation") "7602CBAF2CAE9A43")
-         ((string-equal hostname "travelstation") "814A355856D8FACA")
-         (t nil))))
+(setq org-crypt-key "eleina@member.fsf.org")
 
 ;; General GPG/epa-file stuff
 (require 'epa-file)
 (epa-file-enable)
-(setq epa-file-encrypt-to '("7602CBAF2CAE9A43" "814A355856D8FACA"))
+(setq epa-file-encrypt-to "eleina@member.fsf.org")
 
 ;; authinfo for Magit Forge
 (setq auth-sources '("~/.authinfo"))
 
 ;; Tidal (Cycles) stuff for live-coding algorithmic music
 (setq tidal-boot-script-path "~/.cabal/share/x86_64-osx-ghc-8.8.4/tidal-1.7.4/BootTidal.hs")
+
+;; D2 keymaps
+(defvar d2-mode-map
+  (let ((map (make-sparse-keymap)))
+    (define-key map (kbd "C-c C-c") 'd2-compile)
+    (define-key map (kbd "C-c C-f") 'd2-compile-file)
+    (define-key map (kbd "C-c C-b") 'd2-compile-buffer)
+    (define-key map (kbd "C-c C-r") 'd2-compile-region)
+    (define-key map (kbd "C-c C-h") 'd2-compile-file-and-browse)
+    (define-key map (kbd "C-c C-j") 'd2-compile-buffer-and-browse)
+    (define-key map (kbd "C-c C-k") 'd2-compile-region-and-browse)
+    (define-key map (kbd "C-c C-o") 'd2-open-browser)
+    (define-key map (kbd "C-x C-o") 'd2-view-current-svg)
+    (define-key map (kbd "C-c C-d") 'd2-open-doc)
+    map))

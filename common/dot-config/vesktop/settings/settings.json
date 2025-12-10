@@ -1,6 +1,6 @@
 {
-    "autoUpdate": true,
-    "autoUpdateNotification": true,
+    "autoUpdate": false,
+    "autoUpdateNotification": false,
     "useQuickCss": true,
     "themeLinks": [],
     "eagerPatches": false,
@@ -283,7 +283,8 @@
             "enabled": false
         },
         "NoBlockedMessages": {
-            "enabled": true
+            "enabled": true,
+            "ignoreMessages": false
         },
         "NoDevtoolsWarning": {
             "enabled": false
@@ -549,7 +550,8 @@
             "enabled": false
         },
         "VolumeBooster": {
-            "enabled": true
+            "enabled": true,
+            "multiplier": 2
         },
         "WebKeybinds": {
             "enabled": true
@@ -603,6 +605,10 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1761786960829
+        "settingsSyncVersion": 1764908451508
+    },
+    "uiElements": {
+        "chatBarButtons": {},
+        "messagePopoverButtons": {}
     }
 }

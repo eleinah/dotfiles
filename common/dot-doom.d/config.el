@@ -137,7 +137,7 @@
 (setq auth-sources '("~/.authinfo"))
 
 ;; Tidal (Cycles) stuff for live-coding algorithmic music
-(setq tidal-boot-script-path "~/.cabal/share/x86_64-osx-ghc-8.8.4/tidal-1.7.4/BootTidal.hs")
+(setq tidal-boot-script-path "/usr/share/haskell-tidal/BootTidal.hs")
 
 ;; D2 keymaps
 (defvar d2-mode-map

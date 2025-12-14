@@ -27,6 +27,7 @@ s.reboot { // server options are only updated on reboot
 		~dirt.stop; // stop any old ones, avoid duplicate dirt (if it is nil, this won't do anything)
 		~dirt = SuperDirt(2, s); // two output channels, increase if you want to pan across more channels
 		~dirt.loadSoundFiles;   // load samples (path containing a wildcard can be passed in)
+        ~dirt.loadSoundFiles("/home/ellie/Music/samples/*");
 		// for example: ~dirt.loadSoundFiles("/Users/myUserName/Dirt/samples/*");
 		// s.sync; // optionally: wait for samples to be read
 		~dirt.start(57120, 0 ! 12);   // start listening on port 57120, create two busses each sending audio to channel 0

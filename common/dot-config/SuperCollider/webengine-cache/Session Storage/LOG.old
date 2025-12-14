@@ -1,2 +1,3 @@
-2025/12/12-23:48:27.531 4a7a Creating DB /home/ellie/.config/SuperCollider/webengine-cache/Session Storage since it was missing.
-2025/12/12-23:48:27.532 4a7a Reusing MANIFEST /home/ellie/.config/SuperCollider/webengine-cache/Session Storage/MANIFEST-000001
+2025/12/13-00:07:50.496 f25 Reusing MANIFEST /home/ellie/.config/SuperCollider/webengine-cache/Session Storage/MANIFEST-000001
+2025/12/13-00:07:50.496 f25 Recovering log #3
+2025/12/13-00:07:50.497 f25 Reusing old log /home/ellie/.config/SuperCollider/webengine-cache/Session Storage/000003.log 

@@ -1,136 +1,108 @@
 Match host * exec "gpg-connect-agent UPDATESTARTUPTTY /bye"
 SetEnv TERM=xterm-256color
 
-Host list
-    Hostname list.lly.local
-    Port 2222
-    User wishlist
-    IdentityAgent /run/user/1000/gnupg/S.gpg-agent.ssh
-    ForwardAgent yes
-    RequestTTY yes
 Host rave
     Hostname rave.lly.local
     User root
-    ProxyJump list:22
     ForwardAgent yes
     RequestTTY yes
 Host rave2
     Hostname rave2.lly.local
     User root
-    ProxyJump list:22
     ForwardAgent yes
     RequestTTY yes
 Host mainstation
     Hostname mainstation.lly.local
     User ellie
-    ProxyJump list:22
     ForwardAgent yes
     RequestTTY yes
 Host qbittorrent
     Hostname qbittorrent.lly.local
     User root
-    ProxyJump list:22
     ForwardAgent yes
     RequestTTY yes
 Host prowlarr
     Hostname prowlarr.lly.local
     User root
-    ProxyJump list:22
     ForwardAgent yes
     RequestTTY yes
 Host radarr
     Hostname radarr.lly.local
     User root
-    ProxyJump list:22
     ForwardAgent yes
     RequestTTY yes
 Host sonarr
     Hostname sonarr.lly.local
     User root
-    ProxyJump list:22
     ForwardAgent yes
     RequestTTY yes
 Host jellyseerr
     Hostname jellyseerr.lly.local
     User root
-    ProxyJump list:22
     ForwardAgent yes
     RequestTTY yes
 Host wizarr
     Hostname wizarr.lly.local
     User root
-    ProxyJump list:22
     ForwardAgent yes
     RequestTTY yes
 Host jellyfin
     Hostname jellyfin.lly.local
     User root
-    ProxyJump list:22
     ForwardAgent yes
     RequestTTY yes
 Host unpackerr
     Hostname unpackerr.lly.local
     User root
-    ProxyJump list:22
     ForwardAgent yes
     RequestTTY yes
 Host ptero
     Hostname ptero.lly.local
     User root
-    ProxyJump list:22
     ForwardAgent yes
     RequestTTY yes
 Host wings
     Hostname wings.lly.local
     User root
-    ProxyJump list:22
     ForwardAgent yes
     RequestTTY yes
 Host adguard
     Hostname adguard.lly.local
     User root
-    ProxyJump list:22
     ForwardAgent yes
     RequestTTY yes
 Host cloudflared
     Hostname cloudflared.lly.local
     User root
-    ProxyJump list:22
     ForwardAgent yes
     RequestTTY yes
 Host it-tools
     Hostname it-tools.lly.local
     User root
-    ProxyJump list:22
     ForwardAgent yes
     RequestTTY yes
 Host bytestash
     Hostname bytestash.lly.local
     User root
-    ProxyJump list:22
     ForwardAgent yes
     RequestTTY yes
 Host vaultwarden
     Hostname vaultwarden.lly.local
     User root
-    ProxyJump list:22
     ForwardAgent yes
     RequestTTY yes
 Host bunkerweb
     Hostname bunkerweb.lly.local
     User root
-    ProxyJump list:22
     ForwardAgent yes
     RequestTTY yes
 Host caddy
     Hostname caddy.lly.local
     User root
-    ProxyJump list:22
     ForwardAgent yes
     RequestTTY yes
 Host chirpy
     Hostname chirpy.lly.local
     User chirpy
-    ProxyJump list:22
     ForwardAgent yes
     RequestTTY yes

@@ -7,3 +7,6 @@ common/dot-config/vesktop/state.json
 common/dot-config/simple-update-notifier/electron-builder.json
 common/dot-config/vesktop/settings.json
 common/dot-config/Thunar/accels.scm
+/common/dot-config/SuperCollider/webengine-cache/*
+/common/dot-config/SuperCollider/sessions/*
+/common/dot-config/SuperCollider/sc_ide_conf.yaml

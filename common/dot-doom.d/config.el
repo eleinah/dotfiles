@@ -138,6 +138,28 @@
 
 ;; Tidal (Cycles) stuff for live-coding algorithmic music
 (setq tidal-boot-script-path "/usr/share/haskell-tidal/BootTidal.hs")
+(use-package! tidal
+  :defer t
+  :config
+  (map! :mode tidal-mode
+        :localleader
+        :desc "Start Tidal" "s" #'tidal-start-haskell
+        :desc "Quit Tidal" "q" #'tidal-quit-haskell
+        :desc "Run multiple lines" "e" #'tidal-run-multiple-lines
+        :desc "Run line" "l" #'tidal-run-line
+        :desc "Run region" "r" #'tidal-run-region
+        :desc "Hush" "h" #'tidal-hush
+        (:prefix ("d" . "Run sequence")
+         :desc "Run sequence 1" "1" #'tidal-run-d1
+         :desc "Run sequence 2" "2" #'tidal-run-d2
+         :desc "Run sequence 3" "3" #'tidal-run-d3
+         :desc "Run sequence 4" "4" #'tidal-run-d4
+         :desc "Run sequence 5" "5" #'tidal-run-d5
+         :desc "Run sequence 6" "6" #'tidal-run-d6
+         :desc "Run sequence 7" "7" #'tidal-run-d7
+         :desc "Run sequence 8" "8" #'tidal-run-d8
+         :desc "Run sequence 9" "9" #'tidal-run-d9
+         :desc "Run sequence 10" "0" #'tidal-run-d10)))
 
 ;; D2 keymaps
 (defvar d2-mode-map

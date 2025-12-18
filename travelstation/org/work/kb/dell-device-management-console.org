@@ -1,7 +1,0 @@
-#+title: Dell Device Management Console
-* _About & Intended Audience_
-This is for IT administrators and technicians responsible for configuring and managing Dell displays, Dell docks, and other Dell peripherals, such as monitors, keyboards, mice, audio devices, webcams, pens, and more, using the Dell Device Management Console.
-* _Prerequisites_
-There are a few things we need before setting up Dell Device Management Console:
-- A Dell user account which is tied to an organization email address to create a tenant.
-- A registered tenant in the Dell Device Management Console

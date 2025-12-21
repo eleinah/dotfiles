@@ -65,3 +65,4 @@ Host thischord
      User root
 Host nix-lab
      Hostname nix-lab.lly.local
+     User ellie

@@ -63,3 +63,5 @@ Host crafty
 Host thischord
      Hostname thischord.lly.local
      User root
+Host nix-lab
+     Hostname nix-lab.lly.local
